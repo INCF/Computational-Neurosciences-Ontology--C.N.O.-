@@ -7,12 +7,12 @@
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:cno="http://purl.org/incf/ontology/Computational_Neurosciences/cno.owl#"
+    xmlns:cno="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#"
     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
     xmlns:obo_annot="http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#"
     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://purl.org/incf/ontology/Computational_Neurosciences/cno.owl">
+  xml:base="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl">
   <owl:Ontology rdf:about="">
     <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Stephen Larson</dc:contributor>

@@ -14,21 +14,29 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl">
   <owl:Ontology rdf:about="">
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Fahim T. Imam</dc:contributor>
     <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Yann Le Franc</dc:creator>
     <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >24/01/2012</dc:date>
+    >13/03/2012</dc:date>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >version 0.2.4</owl:versionInfo>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Sean Hill</dc:contributor>
     <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
     <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Computational Neuroscience Ontology</dc:title>
     <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Stephen Larson</dc:contributor>
+    >Stephen D. Larson</dc:contributor>
     <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Fahim Imam</dc:contributor>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >version 0.2.3</owl:versionInfo>
+    >Birgit Kriener</dc:contributor>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Subhasis Ray</dc:contributor>
     <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >INCF MultiScale Modeling Task Force</dc:contributor>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Lars Schwabe</dc:contributor>
     <owl:imports rdf:resource="http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</rdfs:comment>
@@ -39,18 +47,22 @@
 The source of the definition can be defined with class from OBO-annotation</rdfs:comment>
       </rdf:Description>
     </owl:imports>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Erik De Schutter</dc:contributor>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Padraig Gleeson</dc:contributor>
     <dc:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >An ontology to describe the field of Computational Neurosciences</dc:subject>
   </owl:Ontology>
   <owl:Class rdf:ID="cno_0000179">
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000190"/>
+      <owl:Class rdf:ID="cno_0000150"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:ID="cno_0000151"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000150"/>
+      <owl:Class rdf:ID="cno_0000190"/>
     </owl:disjointWith>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >related to definition in NIF: http://neurolex.org/wiki/Category:One_dimensional_region</rdfs:comment>
@@ -74,10 +86,10 @@ The source of the definition can be defined with class from OBO-annotation</rdfs
       <owl:Class rdf:ID="cno_0000178"/>
     </rdfs:subClassOf>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000164"/>
+      <owl:Class rdf:ID="cno_0000157"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000157"/>
+      <owl:Class rdf:ID="cno_0000164"/>
     </owl:disjointWith>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >uniform</rdfs:label>
@@ -93,13 +105,13 @@ The source of the definition can be defined with class from OBO-annotation</rdfs
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >spiking current</rdfs:label>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000086"/>
+      <owl:Class rdf:ID="cno_0000088"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:ID="cno_0000085"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000088"/>
+      <owl:Class rdf:ID="cno_0000086"/>
     </owl:disjointWith>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >an abstract current that represents the mechanisms involved in the action potential.</core:definition>
@@ -141,10 +153,10 @@ Questionable</rdfs:comment>
       <owl:Class rdf:ID="cno_0000015"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000065"/>
+      <owl:Class rdf:ID="cno_0000162"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000162"/>
+      <owl:Class rdf:ID="cno_0000065"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:ID="cno_0000071"/>
@@ -202,23 +214,23 @@ Questionable</rdfs:comment>
       <owl:Class rdf:ID="cno_0000192"/>
     </rdfs:subClassOf>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000208"/>
+      <owl:Class rdf:ID="cno_0000140"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:ID="cno_0000207"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000140"/>
+      <owl:Class rdf:ID="cno_0000208"/>
     </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:ID="cno_0000199">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >triplet-based rule</rdfs:label>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000200"/>
+      <owl:Class rdf:ID="cno_0000198"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000198"/>
+      <owl:Class rdf:ID="cno_0000200"/>
     </owl:disjointWith>
     <rdfs:subClassOf>
       <owl:Class rdf:ID="cno_0000211"/>
@@ -241,10 +253,10 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:ID="cno_0000116">
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000115"/>
+      <owl:Class rdf:ID="cno_0000114"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000114"/>
+      <owl:Class rdf:ID="cno_0000115"/>
     </owl:disjointWith>
     <rdfs:subClassOf>
       <owl:Class rdf:ID="cno_0000098"/>
@@ -254,13 +266,13 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:ID="cno_0000168">
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000172"/>
+      <owl:Class rdf:ID="cno_0000171"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:ID="cno_0000170"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000171"/>
+      <owl:Class rdf:ID="cno_0000172"/>
     </owl:disjointWith>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >uniform</rdfs:label>
@@ -347,24 +359,24 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
       <owl:Class rdf:about="#cno_0000072"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000162"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000065"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000069"/>
+      <owl:Class rdf:about="#cno_0000162"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000071"/>
     </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000069"/>
+    </owl:disjointWith>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Markram and Tsodyks model</rdfs:label>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000068"/>
+      <owl:Class rdf:about="#cno_0000070"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000070"/>
+      <owl:Class rdf:about="#cno_0000068"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000091"/>
@@ -396,11 +408,11 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >an abstract current that represents the mechanisms of bursting</core:definition>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000086"/>
+      <owl:Class rdf:about="#cno_0000085"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000087"/>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000085"/>
+      <owl:Class rdf:about="#cno_0000086"/>
     </owl:disjointWith>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >bursting current</rdfs:label>
@@ -439,28 +451,28 @@ This term is questionable</rdfs:comment>
       <owl:Class rdf:ID="cno_0000003"/>
     </rdfs:subClassOf>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000133"/>
+      <owl:Class rdf:ID="cno_0000191"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000191"/>
+      <owl:Class rdf:ID="cno_0000133"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:ID="cno_0000132"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000194"/>
+      <owl:Class rdf:ID="cno_0000131"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:ID="cno_0000136"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000131"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000193"/>
+      <owl:Class rdf:ID="cno_0000194"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:ID="cno_0000135"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="cno_0000193"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:ID="cno_0000141"/>
@@ -470,10 +482,10 @@ This term is questionable</rdfs:comment>
     </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000198">
+    <owl:disjointWith rdf:resource="#cno_0000199"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000200"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000199"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >pair-based rule</rdfs:label>
     <rdfs:subClassOf>
@@ -489,10 +501,10 @@ This term is questionable</rdfs:comment>
       <owl:Class rdf:ID="cno_0000058"/>
     </rdfs:subClassOf>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000177"/>
+      <owl:Class rdf:ID="cno_0000118"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000118"/>
+      <owl:Class rdf:about="#cno_0000177"/>
     </owl:disjointWith>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Should be linked to the cellular models with an object property such as "isInstanceOf"</rdfs:comment>
@@ -511,10 +523,10 @@ This term is questionable</rdfs:comment>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000069"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000188"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000071"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000188"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000074"/>
     </owl:disjointWith>
@@ -627,10 +639,10 @@ This term is questionable</rdfs:comment>
     >a network model component that describe the different level of organization of the network model</core:definition>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >network layout component</rdfs:label>
+    <owl:disjointWith rdf:resource="#cno_0000117"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000118"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000117"/>
   </owl:Class>
   <owl:Class rdf:ID="cno_0000089">
     <rdfs:subClassOf>
@@ -687,10 +699,10 @@ This term is questionable</rdfs:comment>
     >connectivity pattern</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000157">
+    <owl:disjointWith rdf:resource="#cno_0000159"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000164"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000159"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >user-defined</rdfs:label>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -717,16 +729,16 @@ This term is questionable</rdfs:comment>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >This part of the classification is based upon the proposed categories in Morrisson, 2008</rdfs:comment>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000058"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000045"/>
+      <owl:Class rdf:about="#cno_0000036"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000037"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000036"/>
+      <owl:Class rdf:about="#cno_0000045"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000058"/>
     </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:ID="cno_0000109">
@@ -738,13 +750,13 @@ This term is questionable</rdfs:comment>
       <owl:Class rdf:ID="cno_0000047"/>
     </rdfs:subClassOf>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000106"/>
+      <owl:Class rdf:ID="cno_0000105"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:ID="cno_0000108"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000105"/>
+      <owl:Class rdf:ID="cno_0000106"/>
     </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000137">
@@ -797,10 +809,10 @@ This term is questionable</rdfs:comment>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000138"/>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000131"/>
+      <owl:Class rdf:about="#cno_0000194"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000194"/>
+      <owl:Class rdf:about="#cno_0000131"/>
     </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000128">
@@ -838,10 +850,10 @@ This term is questionable</rdfs:comment>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000043"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000089"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000041"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000089"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000118">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -850,8 +862,8 @@ This term is questionable</rdfs:comment>
     >Should be linked to the "synaptic models" with object property as for cellular element</rdfs:comment>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >representation of the synaptic elements used to build a network model</core:definition>
-    <owl:disjointWith rdf:resource="#cno_0000177"/>
     <owl:disjointWith rdf:resource="#cno_0000117"/>
+    <owl:disjointWith rdf:resource="#cno_0000177"/>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#cno_0000058"/>
     </rdfs:subClassOf>
@@ -1051,13 +1063,13 @@ This term is questionable</rdfs:comment>
       <owl:Class rdf:about="#cno_0000001"/>
     </rdfs:subClassOf>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000011"/>
+      <owl:Class rdf:ID="cno_0000009"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:ID="cno_0000008"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000009"/>
+      <owl:Class rdf:ID="cno_0000011"/>
     </owl:disjointWith>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >a type of model that represents biological neural networks.</core:definition>
@@ -1067,13 +1079,13 @@ This term is questionable</rdfs:comment>
     <obo_annot:synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >reward-based learning</obo_annot:synonym>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000195"/>
+      <owl:Class rdf:ID="cno_0000110"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:ID="cno_0000107"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000110"/>
+      <owl:Class rdf:ID="cno_0000195"/>
     </owl:disjointWith>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >reinforcement learning</rdfs:label>
@@ -1123,10 +1135,10 @@ This term is questionable</rdfs:comment>
       <owl:Class rdf:about="#cno_0000130"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000135"/>
+      <owl:Class rdf:about="#cno_0000193"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000193"/>
+      <owl:Class rdf:about="#cno_0000135"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000143"/>
@@ -1142,10 +1154,10 @@ This term is questionable</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:ID="cno_0000030">
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000029"/>
+      <owl:Class rdf:ID="cno_0000028"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000028"/>
+      <owl:Class rdf:ID="cno_0000029"/>
     </owl:disjointWith>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >spiking network model</rdfs:label>
@@ -1161,24 +1173,34 @@ This term is questionable</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#cno_0000047"/>
     </rdfs:subClassOf>
-    <owl:disjointWith rdf:resource="#cno_0000109"/>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000108"/>
-    </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000105"/>
     </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000108"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000109"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000062">
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000075"/>
+      <owl:Class rdf:about="#cno_0000061"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000072"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000061"/>
+      <owl:Class rdf:about="#cno_0000075"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:ID="cno_0000059"/>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="cno_0000005"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000080"/>
     </owl:disjointWith>
@@ -1188,19 +1210,17 @@ This term is questionable</rdfs:comment>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000067"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="cno_0000005"/>
-        </owl:onProperty>
-        <owl:someValuesFrom>
-          <owl:Class rdf:ID="cno_0000059"/>
-        </owl:someValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000077"/>
     </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000071"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000078"/>
+    </owl:disjointWith>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >adaptive exponential integrate-and-fire</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:someValuesFrom>
@@ -1211,14 +1231,6 @@ This term is questionable</rdfs:comment>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000071"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000078"/>
-    </owl:disjointWith>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >adaptive exponential integrate-and-fire</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#cno_0000060"/>
     </rdfs:subClassOf>
@@ -1249,10 +1261,10 @@ This term is questionable</rdfs:comment>
       <owl:Class rdf:about="#cno_0000015"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000066"/>
+      <owl:Class rdf:about="#cno_0000016"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000016"/>
+      <owl:Class rdf:about="#cno_0000066"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000076"/>
@@ -1395,10 +1407,10 @@ This term is questionable</rdfs:comment>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >mixed grouping</rdfs:label>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000125"/>
+      <owl:Class rdf:ID="cno_0000124"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000124"/>
+      <owl:Class rdf:ID="cno_0000125"/>
     </owl:disjointWith>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >cellular grouping that is based on two criterions: anatomical and functional</core:definition>
@@ -1408,11 +1420,11 @@ This term is questionable</rdfs:comment>
     <obo_annot:externalSourceURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >http://www.ebi.ac.uk/sbo/main/SBO:0000225</obo_annot:externalSourceURI>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000208"/>
+      <owl:Class rdf:about="#cno_0000140"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000139"/>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000140"/>
+      <owl:Class rdf:about="#cno_0000208"/>
     </owl:disjointWith>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >delay</rdfs:label>
@@ -1424,13 +1436,13 @@ This term is questionable</rdfs:comment>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >notation</rdfs:label>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000144"/>
+      <owl:Class rdf:ID="cno_0000146"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:ID="cno_0000147"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000146"/>
+      <owl:Class rdf:ID="cno_0000144"/>
     </owl:disjointWith>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#cno_0000004"/>
@@ -1440,16 +1452,16 @@ This term is questionable</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000049">
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000044"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000059"/>
+      <owl:Class rdf:ID="cno_0000048"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000047"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000048"/>
+      <owl:Class rdf:about="#cno_0000059"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="cno_0000044"/>
     </owl:disjointWith>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >abstract current</rdfs:label>
@@ -1465,16 +1477,16 @@ This term is questionable</rdfs:comment>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Give a better definition. The problem is how to represent integrate and fire models with multiple conductances such as in Hill, 2005?</rdfs:comment>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000022"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000023"/>
+      <owl:Class rdf:ID="cno_0000024"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:ID="cno_0000025"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000024"/>
+      <owl:Class rdf:ID="cno_0000023"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="cno_0000022"/>
     </owl:disjointWith>
     <rdfs:subClassOf>
       <owl:Class rdf:ID="cno_0000018"/>
@@ -1489,16 +1501,16 @@ This term is questionable</rdfs:comment>
 time during the emission of an action potential.</core:definition>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >non linear spike generation current</rdfs:label>
+    <owl:disjointWith rdf:resource="#cno_0000049"/>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000044"/>
+      <owl:Class rdf:about="#cno_0000048"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000047"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000048"/>
+      <owl:Class rdf:about="#cno_0000044"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000049"/>
   </owl:Class>
   <owl:Class rdf:ID="cno_0000031">
     <rdfs:subClassOf>
@@ -1545,13 +1557,13 @@ time during the emission of an action potential.</core:definition>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000138"/>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000194"/>
+      <owl:Class rdf:about="#cno_0000141"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000191"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000141"/>
+      <owl:Class rdf:about="#cno_0000194"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000131"/>
@@ -1565,18 +1577,6 @@ time during the emission of an action potential.</core:definition>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000061">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#cno_0000005"/>
-        </owl:onProperty>
-        <owl:someValuesFrom>
-          <owl:Class>
-            <owl:complementOf rdf:resource="#cno_0000049"/>
-          </owl:Class>
-        </owl:someValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000076"/>
     </owl:disjointWith>
@@ -1611,22 +1611,12 @@ time during the emission of an action potential.</core:definition>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000093"/>
     </owl:disjointWith>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:someValuesFrom>
-          <owl:Class rdf:ID="cno_0000052"/>
-        </owl:someValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#cno_0000005"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000091"/>
+      <owl:Class rdf:about="#cno_0000075"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000072"/>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000075"/>
+      <owl:Class rdf:about="#cno_0000091"/>
     </owl:disjointWith>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >integrate-and-fire</rdfs:label>
@@ -1636,9 +1626,31 @@ time during the emission of an action potential.</core:definition>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000015"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#cno_0000005"/>
+        </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:complementOf rdf:resource="#cno_0000049"/>
+          </owl:Class>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000016"/>
     </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#cno_0000005"/>
+        </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class rdf:ID="cno_0000052"/>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000077"/>
     </owl:disjointWith>
@@ -1652,10 +1664,10 @@ time during the emission of an action potential.</core:definition>
       <owl:Class rdf:about="#cno_0000073"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000074"/>
+      <owl:Class rdf:about="#cno_0000080"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000080"/>
+      <owl:Class rdf:about="#cno_0000074"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000092"/>
@@ -1675,13 +1687,13 @@ time during the emission of an action potential.</core:definition>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000107">
     <rdfs:subClassOf rdf:resource="#cno_0000169"/>
-    <owl:disjointWith rdf:resource="#cno_0000196"/>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000195"/>
-    </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000110"/>
     </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000195"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000196"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >supervised learning</rdfs:label>
   </owl:Class>
@@ -1794,10 +1806,10 @@ time during the emission of an action potential.</core:definition>
       <owl:Class rdf:about="#cno_0000080"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000067"/>
+      <owl:Class rdf:about="#cno_0000073"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000073"/>
+      <owl:Class rdf:about="#cno_0000067"/>
     </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:ID="cno_0000019">
@@ -1816,13 +1828,13 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     >reduced model</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000144">
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000147"/>
-    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000145"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000146"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000145"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000147"/>
+    </owl:disjointWith>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >name</rdfs:label>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -1850,22 +1862,22 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
       <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
           <owl:Restriction>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="#cno_0000005"/>
+            </owl:onProperty>
             <owl:someValuesFrom>
               <owl:Class>
                 <owl:complementOf rdf:resource="#cno_0000049"/>
               </owl:Class>
             </owl:someValuesFrom>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:about="#cno_0000005"/>
-            </owl:onProperty>
           </owl:Restriction>
           <owl:Restriction>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:about="#cno_0000005"/>
-            </owl:onProperty>
             <owl:someValuesFrom>
               <owl:Class rdf:about="#cno_0000052"/>
             </owl:someValuesFrom>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="#cno_0000005"/>
+            </owl:onProperty>
           </owl:Restriction>
         </owl:intersectionOf>
       </owl:Class>
@@ -1890,11 +1902,11 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <rdfs:subClassOf>
       <owl:Class rdf:about="#cno_0000047"/>
     </rdfs:subClassOf>
-    <owl:disjointWith rdf:resource="#cno_0000109"/>
-    <owl:disjointWith rdf:resource="#cno_0000106"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000105"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000106"/>
+    <owl:disjointWith rdf:resource="#cno_0000109"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >ionic dependent current</rdfs:label>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -1926,29 +1938,29 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
       <owl:Class rdf:about="#cno_0000132"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000194"/>
-    </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000136"/>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000133"/>
+      <owl:Class rdf:about="#cno_0000141"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000191"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000141"/>
+      <owl:Class rdf:about="#cno_0000133"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000136"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000194"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000131"/>
     </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000143"/>
-    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000138"/>
+    <owl:disjointWith rdf:resource="#cno_0000135"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000193"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000135"/>
-    <owl:disjointWith rdf:resource="#cno_0000138"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000143"/>
+    </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000173">
     <owl:disjointWith rdf:resource="#cno_0000137"/>
@@ -1993,10 +2005,10 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000192"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000134"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000193"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000134"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000008">
     <rdfs:subClassOf>
@@ -2009,11 +2021,11 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >a type of model that represent the biological activities of a cell.</core:definition>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000011"/>
+      <owl:Class rdf:about="#cno_0000009"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000010"/>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000009"/>
+      <owl:Class rdf:about="#cno_0000011"/>
     </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000060">
@@ -2069,19 +2081,19 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000066"/>
     </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000091"/>
-    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000072"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000067"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000072"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000091"/>
+    </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000061"/>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000078"/>
+      <owl:Class rdf:about="#cno_0000015"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000015"/>
+      <owl:Class rdf:about="#cno_0000078"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000069"/>
@@ -2103,10 +2115,10 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >HindMarch and Rose model</rdfs:label>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000080"/>
+      <owl:Class rdf:about="#cno_0000077"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000077"/>
+      <owl:Class rdf:about="#cno_0000080"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000092"/>
@@ -2116,10 +2128,10 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >homeostatic plasticity model</rdfs:label>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000183"/>
+      <owl:Class rdf:about="#cno_0000182"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000182"/>
+      <owl:Class rdf:ID="cno_0000183"/>
     </owl:disjointWith>
     <rdfs:subClassOf>
       <owl:Class rdf:ID="cno_0000034"/>
@@ -2133,14 +2145,14 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     </rdfs:subClassOf>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >a current type that describes the flow of current through specific ionic channels.</core:definition>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000044"/>
-    </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000059"/>
+    <owl:disjointWith rdf:resource="#cno_0000049"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000048"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000049"/>
+    <owl:disjointWith rdf:resource="#cno_0000059"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000044"/>
+    </owl:disjointWith>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >ionic current</rdfs:label>
   </owl:Class>
@@ -2151,11 +2163,11 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
   <owl:Class rdf:about="#cno_0000147">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >unit</rdfs:label>
-    <owl:disjointWith rdf:resource="#cno_0000144"/>
+    <owl:disjointWith rdf:resource="#cno_0000145"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000146"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000145"/>
+    <owl:disjointWith rdf:resource="#cno_0000144"/>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#cno_0000004"/>
     </rdfs:subClassOf>
@@ -2194,13 +2206,13 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:disjointWith rdf:resource="#cno_0000135"/>
     <owl:disjointWith rdf:resource="#cno_0000138"/>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000194"/>
+      <owl:Class rdf:about="#cno_0000141"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000191"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000141"/>
+      <owl:Class rdf:about="#cno_0000194"/>
     </owl:disjointWith>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#cno_0000003"/>
@@ -2210,11 +2222,11 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <rdfs:subClassOf>
       <owl:Class rdf:about="#cno_0000001"/>
     </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="#cno_0000008"/>
+    <owl:disjointWith rdf:resource="#cno_0000010"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000011"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000010"/>
-    <owl:disjointWith rdf:resource="#cno_0000008"/>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >a type of model that represents the biological processes involved in synaptic transmission</core:definition>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -2228,10 +2240,10 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >cellular plasticity model</rdfs:label>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000161"/>
+      <owl:Class rdf:about="#cno_0000034"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000034"/>
+      <owl:Class rdf:ID="cno_0000161"/>
     </owl:disjointWith>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#cno_0000011"/>
@@ -2245,10 +2257,10 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
       <owl:Class rdf:about="#cno_0000065"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000073"/>
+      <owl:Class rdf:about="#cno_0000067"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000067"/>
+      <owl:Class rdf:about="#cno_0000073"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000076"/>
@@ -2278,10 +2290,10 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000162"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000188"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000077"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000188"/>
     <owl:disjointWith rdf:resource="#cno_0000061"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000093"/>
@@ -2312,9 +2324,9 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <rdfs:subClassOf rdf:resource="#cno_0000047"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     ></rdfs:comment>
-    <owl:disjointWith rdf:resource="#cno_0000109"/>
-    <owl:disjointWith rdf:resource="#cno_0000106"/>
     <owl:disjointWith rdf:resource="#cno_0000108"/>
+    <owl:disjointWith rdf:resource="#cno_0000106"/>
+    <owl:disjointWith rdf:resource="#cno_0000109"/>
   </owl:Class>
   <owl:Class rdf:ID="cno_0000217">
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -2338,11 +2350,11 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >linear</rdfs:label>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000170"/>
+      <owl:Class rdf:about="#cno_0000171"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000168"/>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000171"/>
+      <owl:Class rdf:about="#cno_0000170"/>
     </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000073">
@@ -2366,11 +2378,11 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000093"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000061"/>
-    <owl:disjointWith rdf:resource="#cno_0000072"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000091"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000072"/>
+    <owl:disjointWith rdf:resource="#cno_0000061"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000077"/>
     </owl:disjointWith>
@@ -2390,10 +2402,10 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000067"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000074"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000080"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000074"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000092"/>
     </owl:disjointWith>
@@ -2436,22 +2448,22 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     </rdfs:subClassOf>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >a cellular model component that represents the flow of current triggered by the activation of a chemical or electrical synapse model.</core:definition>
+    <owl:disjointWith rdf:resource="#cno_0000049"/>
+    <owl:disjointWith rdf:resource="#cno_0000047"/>
+    <owl:disjointWith rdf:resource="#cno_0000059"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000044"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000059"/>
-    <owl:disjointWith rdf:resource="#cno_0000047"/>
-    <owl:disjointWith rdf:resource="#cno_0000049"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >synaptic current</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000034">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >synaptic plasticity model</rdfs:label>
+    <owl:disjointWith rdf:resource="#cno_0000033"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000161"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000033"/>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >model of plasticity that represents the mechanisms underlying the dynamic changes in synaptic transmission, depending on the network or cellular activity.</core:definition>
     <rdfs:subClassOf>
@@ -2466,9 +2478,9 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <rdfs:subClassOf>
       <owl:Class rdf:about="#cno_0000004"/>
     </rdfs:subClassOf>
-    <owl:disjointWith rdf:resource="#cno_0000144"/>
-    <owl:disjointWith rdf:resource="#cno_0000147"/>
     <owl:disjointWith rdf:resource="#cno_0000145"/>
+    <owl:disjointWith rdf:resource="#cno_0000147"/>
+    <owl:disjointWith rdf:resource="#cno_0000144"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >numerical value</rdfs:label>
   </owl:Class>
@@ -2501,20 +2513,20 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000130"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000133"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000191"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000133"/>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#cno_0000003"/>
     </rdfs:subClassOf>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000131"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000134"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000192"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000134"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000208">
     <rdfs:subClassOf>
@@ -2524,11 +2536,11 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     >http://www.ebi.ac.uk/sbo/main/SBO:0000347</obo_annot:externalSourceURI>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >duration</rdfs:label>
-    <owl:disjointWith rdf:resource="#cno_0000207"/>
-    <owl:disjointWith rdf:resource="#cno_0000139"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000140"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000139"/>
+    <owl:disjointWith rdf:resource="#cno_0000207"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000191">
     <owl:disjointWith>
@@ -2560,19 +2572,19 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000192"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000173"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000142"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000173"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000194"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000137"/>
     <owl:disjointWith rdf:resource="#cno_0000134"/>
-    <owl:disjointWith rdf:resource="#cno_0000136"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000131"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000136"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000140">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -2580,19 +2592,19 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <rdfs:subClassOf>
       <owl:Class rdf:about="#cno_0000192"/>
     </rdfs:subClassOf>
-    <owl:disjointWith rdf:resource="#cno_0000208"/>
-    <owl:disjointWith rdf:resource="#cno_0000139"/>
     <owl:disjointWith rdf:resource="#cno_0000207"/>
+    <owl:disjointWith rdf:resource="#cno_0000139"/>
+    <owl:disjointWith rdf:resource="#cno_0000208"/>
   </owl:Class>
   <owl:Class rdf:ID="cno_0000122">
     <rdfs:subClassOf rdf:resource="#cno_0000119"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >feedforward</rdfs:label>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000121"/>
+      <owl:Class rdf:ID="cno_0000123"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000123"/>
+      <owl:Class rdf:ID="cno_0000121"/>
     </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:ID="cno_0000056">
@@ -2622,16 +2634,16 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
   <owl:Class rdf:about="#cno_0000036">
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >a model composed that is used to build cellular model types</core:definition>
-    <owl:disjointWith rdf:resource="#cno_0000197"/>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000058"/>
+      <owl:Class rdf:about="#cno_0000037"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000045"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000037"/>
+      <owl:Class rdf:about="#cno_0000058"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000197"/>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#cno_0000002"/>
     </rdfs:subClassOf>
@@ -2678,16 +2690,16 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
       <owl:Class rdf:about="#cno_0000141"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000131"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000194"/>
     </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000131"/>
+    </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000191"/>
-    <owl:disjointWith rdf:resource="#cno_0000137"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000152"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000137"/>
     <owl:disjointWith rdf:resource="#cno_0000135"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000076">
@@ -2731,17 +2743,17 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
       <owl:Class rdf:about="#cno_0000162"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000075"/>
+      <owl:Class rdf:about="#cno_0000092"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000092"/>
+      <owl:Class rdf:about="#cno_0000075"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000188"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000078"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000090"/>
     <owl:disjointWith rdf:resource="#cno_0000073"/>
+    <owl:disjointWith rdf:resource="#cno_0000090"/>
     <owl:disjointWith rdf:resource="#cno_0000189"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000016"/>
@@ -2755,78 +2767,17 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
   </owl:Class>
   <owl:Class rdf:about="#cno_0000150">
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000190"/>
+      <owl:Class rdf:about="#cno_0000151"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000179"/>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000151"/>
+      <owl:Class rdf:about="#cno_0000190"/>
     </owl:disjointWith>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >two dimensional layout</rdfs:label>
     <rdfs:subClassOf rdf:resource="#cno_0000149"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >relates to http://neurolex.org/wiki/Category:Two_dimensional_region</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="#cno_0000093">
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000079"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000065"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000069"/>
-    </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000062"/>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000077"/>
-    </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000188"/>
-    <owl:disjointWith rdf:resource="#cno_0000071"/>
-    <owl:disjointWith rdf:resource="#cno_0000074"/>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000091"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000078"/>
-    </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000061"/>
-    <owl:disjointWith rdf:resource="#cno_0000090"/>
-    <owl:disjointWith rdf:resource="#cno_0000076"/>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000068"/>
-    </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000073"/>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000016"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000092"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000066"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000162"/>
-    </owl:disjointWith>
-    <rdfs:subClassOf rdf:resource="#cno_0000060"/>
-    <owl:disjointWith rdf:resource="#cno_0000070"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Morris-Lecar model</rdfs:label>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000015"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000067"/>
-    </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000072"/>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000080"/>
-    </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000189"/>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000075"/>
-    </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000016">
     <owl:disjointWith rdf:resource="#cno_0000070"/>
@@ -2849,11 +2800,13 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000075"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000093"/>
+    <owl:disjointWith rdf:resource="#cno_0000188"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000066"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000188"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000093"/>
+    </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000067"/>
     </owl:disjointWith>
@@ -2887,15 +2840,74 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000062"/>
   </owl:Class>
+  <owl:Class rdf:about="#cno_0000093">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000079"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000065"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000069"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000062"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000077"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000188"/>
+    <owl:disjointWith rdf:resource="#cno_0000071"/>
+    <owl:disjointWith rdf:resource="#cno_0000074"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000091"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000078"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000061"/>
+    <owl:disjointWith rdf:resource="#cno_0000090"/>
+    <owl:disjointWith rdf:resource="#cno_0000076"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000068"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000073"/>
+    <owl:disjointWith rdf:resource="#cno_0000016"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000092"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000066"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000162"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="#cno_0000060"/>
+    <owl:disjointWith rdf:resource="#cno_0000070"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Morris-Lecar model</rdfs:label>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000015"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000067"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000072"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000080"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000189"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000075"/>
+    </owl:disjointWith>
+  </owl:Class>
   <owl:Class rdf:about="#cno_0000171">
     <rdfs:subClassOf rdf:resource="#cno_0000128"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >non-linear</rdfs:label>
-    <owl:disjointWith rdf:resource="#cno_0000172"/>
+    <owl:disjointWith rdf:resource="#cno_0000168"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000170"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000168"/>
+    <owl:disjointWith rdf:resource="#cno_0000172"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000066">
     <owl:disjointWith rdf:resource="#cno_0000073"/>
@@ -2942,10 +2954,10 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
       <owl:Class rdf:about="#cno_0000067"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000065"/>
+      <owl:Class rdf:about="#cno_0000080"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000080"/>
+      <owl:Class rdf:about="#cno_0000065"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000092"/>
@@ -3075,24 +3087,24 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:disjointWith rdf:resource="#cno_0000071"/>
     <rdfs:subClassOf rdf:resource="#cno_0000060"/>
     <owl:disjointWith rdf:resource="#cno_0000016"/>
-    <owl:disjointWith rdf:resource="#cno_0000090"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000069"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000090"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000015"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000188"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000025">
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000023"/>
-    </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000022"/>
+    <owl:disjointWith rdf:resource="#cno_0000021"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000024"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000021"/>
+    <owl:disjointWith rdf:resource="#cno_0000022"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000023"/>
+    </owl:disjointWith>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >a threshold-based model that correspond to a generalization of the leaky integrate-and-fire model and give a simple description of action potential generation in neurons</core:definition>
     <rdfs:subClassOf>
@@ -3105,20 +3117,20 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >small world</rdfs:label>
     <rdfs:subClassOf rdf:resource="#cno_0000119"/>
+    <owl:disjointWith rdf:resource="#cno_0000122"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000121"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000122"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000045">
-    <owl:disjointWith rdf:resource="#cno_0000197"/>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000058"/>
-    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000036"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000037"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000036"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#cno_0000058"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000197"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >generic model component</rdfs:label>
     <rdfs:subClassOf>
@@ -3171,10 +3183,10 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <rdfs:subClassOf>
       <owl:Class rdf:about="#cno_0000003"/>
     </rdfs:subClassOf>
-    <owl:disjointWith rdf:resource="#cno_0000130"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000193"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000130"/>
     <owl:disjointWith rdf:resource="#cno_0000137"/>
     <owl:disjointWith rdf:resource="#cno_0000135"/>
     <owl:disjointWith rdf:resource="#cno_0000141"/>
@@ -3186,8 +3198,8 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:disjointWith rdf:resource="#cno_0000136"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000075">
-    <owl:disjointWith rdf:resource="#cno_0000093"/>
     <owl:disjointWith rdf:resource="#cno_0000189"/>
+    <owl:disjointWith rdf:resource="#cno_0000093"/>
     <owl:disjointWith rdf:resource="#cno_0000016"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000077"/>
@@ -3211,10 +3223,10 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000079"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000073"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000091"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000073"/>
     <owl:disjointWith rdf:resource="#cno_0000076"/>
     <rdfs:subClassOf rdf:resource="#cno_0000060"/>
     <owl:disjointWith>
@@ -3227,16 +3239,16 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000068"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000080"/>
     <owl:disjointWith rdf:resource="#cno_0000062"/>
+    <owl:disjointWith rdf:resource="#cno_0000080"/>
     <owl:disjointWith rdf:resource="#cno_0000071"/>
     <owl:disjointWith rdf:resource="#cno_0000074"/>
     <owl:disjointWith rdf:resource="#cno_0000188"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000078"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000072"/>
     <owl:disjointWith rdf:resource="#cno_0000090"/>
+    <owl:disjointWith rdf:resource="#cno_0000072"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000015">
     <owl:disjointWith>
@@ -3265,8 +3277,8 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
       <owl:Class rdf:about="#cno_0000078"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000061"/>
-    <owl:disjointWith rdf:resource="#cno_0000074"/>
     <owl:disjointWith rdf:resource="#cno_0000016"/>
+    <owl:disjointWith rdf:resource="#cno_0000074"/>
     <owl:disjointWith rdf:resource="#cno_0000073"/>
     <owl:disjointWith rdf:resource="#cno_0000189"/>
     <owl:disjointWith>
@@ -3283,8 +3295,8 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000075"/>
     <owl:disjointWith rdf:resource="#cno_0000070"/>
-    <owl:disjointWith rdf:resource="#cno_0000066"/>
     <owl:disjointWith rdf:resource="#cno_0000093"/>
+    <owl:disjointWith rdf:resource="#cno_0000066"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000079"/>
     </owl:disjointWith>
@@ -3324,16 +3336,16 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     >three dimensional layout</rdfs:label>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >http://neurolex.org/wiki/Category:Three_dimensional_region</rdfs:comment>
+    <owl:disjointWith rdf:resource="#cno_0000150"/>
+    <owl:disjointWith rdf:resource="#cno_0000179"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000190"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000179"/>
-    <owl:disjointWith rdf:resource="#cno_0000150"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000170">
-    <owl:disjointWith rdf:resource="#cno_0000172"/>
-    <owl:disjointWith rdf:resource="#cno_0000168"/>
     <owl:disjointWith rdf:resource="#cno_0000171"/>
+    <owl:disjointWith rdf:resource="#cno_0000168"/>
+    <owl:disjointWith rdf:resource="#cno_0000172"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >random</rdfs:label>
     <rdfs:subClassOf rdf:resource="#cno_0000128"/>
@@ -3344,15 +3356,15 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     >relates to http://neurolex.org/wiki/Category:Zero_dimensional_region</rdfs:comment>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >zero dimensional layout</rdfs:label>
-    <owl:disjointWith rdf:resource="#cno_0000179"/>
-    <owl:disjointWith rdf:resource="#cno_0000151"/>
     <owl:disjointWith rdf:resource="#cno_0000150"/>
+    <owl:disjointWith rdf:resource="#cno_0000151"/>
+    <owl:disjointWith rdf:resource="#cno_0000179"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000161">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Van Ooyen, Willshaw</rdfs:comment>
-    <owl:disjointWith rdf:resource="#cno_0000034"/>
     <owl:disjointWith rdf:resource="#cno_0000033"/>
+    <owl:disjointWith rdf:resource="#cno_0000034"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >structural plasticity model</rdfs:label>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -3411,20 +3423,20 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:disjointWith rdf:resource="#cno_0000072"/>
     <rdfs:subClassOf rdf:resource="#cno_0000060"/>
     <owl:disjointWith rdf:resource="#cno_0000093"/>
-    <owl:disjointWith rdf:resource="#cno_0000188"/>
     <owl:disjointWith rdf:resource="#cno_0000016"/>
+    <owl:disjointWith rdf:resource="#cno_0000188"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000078"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000189"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000058">
-    <owl:disjointWith rdf:resource="#cno_0000197"/>
-    <owl:disjointWith rdf:resource="#cno_0000045"/>
+    <owl:disjointWith rdf:resource="#cno_0000036"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000037"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000036"/>
+    <owl:disjointWith rdf:resource="#cno_0000045"/>
+    <owl:disjointWith rdf:resource="#cno_0000197"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >network model component</rdfs:label>
     <rdfs:subClassOf>
@@ -3439,12 +3451,12 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >three variable models</rdfs:label>
+    <owl:disjointWith rdf:resource="#cno_0000021"/>
+    <owl:disjointWith rdf:resource="#cno_0000025"/>
+    <owl:disjointWith rdf:resource="#cno_0000022"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000023"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000022"/>
-    <owl:disjointWith rdf:resource="#cno_0000025"/>
-    <owl:disjointWith rdf:resource="#cno_0000021"/>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >a threshold-based model that uses three variables to describe the nerve cells behavior</core:definition>
   </owl:Class>
@@ -3454,10 +3466,10 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <rdfs:subClassOf>
       <owl:Class rdf:about="#cno_0000126"/>
     </rdfs:subClassOf>
-    <owl:disjointWith rdf:resource="#cno_0000059"/>
-    <owl:disjointWith rdf:resource="#cno_0000047"/>
-    <owl:disjointWith rdf:resource="#cno_0000048"/>
     <owl:disjointWith rdf:resource="#cno_0000049"/>
+    <owl:disjointWith rdf:resource="#cno_0000048"/>
+    <owl:disjointWith rdf:resource="#cno_0000047"/>
+    <owl:disjointWith rdf:resource="#cno_0000059"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >stimulation current</rdfs:label>
   </owl:Class>
@@ -3465,11 +3477,11 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >unsupervised learning</rdfs:label>
     <rdfs:subClassOf rdf:resource="#cno_0000169"/>
-    <owl:disjointWith rdf:resource="#cno_0000196"/>
+    <owl:disjointWith rdf:resource="#cno_0000107"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000195"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000107"/>
+    <owl:disjointWith rdf:resource="#cno_0000196"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000142">
     <owl:disjointWith rdf:resource="#cno_0000141"/>
@@ -3560,27 +3572,27 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000066"/>
     <owl:disjointWith rdf:resource="#cno_0000072"/>
-    <owl:disjointWith rdf:resource="#cno_0000074"/>
     <owl:disjointWith rdf:resource="#cno_0000080"/>
+    <owl:disjointWith rdf:resource="#cno_0000074"/>
     <owl:disjointWith rdf:resource="#cno_0000075"/>
     <owl:disjointWith rdf:resource="#cno_0000073"/>
+    <owl:disjointWith rdf:resource="#cno_0000090"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000069"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000090"/>
     <owl:disjointWith rdf:resource="#cno_0000188"/>
-    <owl:disjointWith rdf:resource="#cno_0000016"/>
     <owl:disjointWith rdf:resource="#cno_0000076"/>
+    <owl:disjointWith rdf:resource="#cno_0000016"/>
     <owl:disjointWith rdf:resource="#cno_0000189"/>
     <owl:disjointWith rdf:resource="#cno_0000015"/>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000079"/>
+      <owl:Class rdf:about="#cno_0000162"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000078"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000162"/>
+      <owl:Class rdf:about="#cno_0000079"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000077"/>
@@ -3647,10 +3659,10 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
   <owl:Class rdf:about="#cno_0000183">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >long term plasticity model</rdfs:label>
+    <owl:disjointWith rdf:resource="#cno_0000187"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000182"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000187"/>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >model of synaptic plasticity that describes the long term changes in the synaptic activity.</core:definition>
     <core:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -3721,11 +3733,11 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
       <owl:Class rdf:about="#cno_0000162"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000071"/>
+    <owl:disjointWith rdf:resource="#cno_0000062"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000092"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000188"/>
-    <owl:disjointWith rdf:resource="#cno_0000062"/>
     <rdfs:subClassOf rdf:resource="#cno_0000060"/>
     <owl:disjointWith rdf:resource="#cno_0000093"/>
     <owl:disjointWith>
@@ -3741,8 +3753,8 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000068"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000091"/>
     <owl:disjointWith rdf:resource="#cno_0000074"/>
+    <owl:disjointWith rdf:resource="#cno_0000091"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >spike response model SRM0</rdfs:label>
     <owl:disjointWith rdf:resource="#cno_0000015"/>
@@ -3752,8 +3764,8 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:disjointWith rdf:resource="#cno_0000075"/>
     <owl:disjointWith rdf:resource="#cno_0000066"/>
     <owl:disjointWith rdf:resource="#cno_0000072"/>
-    <owl:disjointWith rdf:resource="#cno_0000189"/>
     <owl:disjointWith rdf:resource="#cno_0000080"/>
+    <owl:disjointWith rdf:resource="#cno_0000189"/>
   </owl:Class>
   <owl:Class rdf:ID="cno_0000081">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -3789,7 +3801,7 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Hodgkin and Huxley model</rdfs:label>
     <owl:disjointWith rdf:resource="#cno_0000071"/>
-    <owl:disjointWith rdf:resource="#cno_0000072"/>
+    <owl:disjointWith rdf:resource="#cno_0000091"/>
     <owl:disjointWith rdf:resource="#cno_0000074"/>
     <owl:disjointWith rdf:resource="#cno_0000188"/>
     <owl:disjointWith>
@@ -3797,7 +3809,7 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000078"/>
     <owl:disjointWith rdf:resource="#cno_0000061"/>
-    <owl:disjointWith rdf:resource="#cno_0000091"/>
+    <owl:disjointWith rdf:resource="#cno_0000072"/>
     <owl:disjointWith rdf:resource="#cno_0000189"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000068"/>
@@ -3853,10 +3865,10 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     >a cellular model component that represents a chemical signaling occuring inside the nerve cell</core:definition>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000023">
-    <owl:disjointWith rdf:resource="#cno_0000024"/>
-    <owl:disjointWith rdf:resource="#cno_0000025"/>
-    <owl:disjointWith rdf:resource="#cno_0000021"/>
     <owl:disjointWith rdf:resource="#cno_0000022"/>
+    <owl:disjointWith rdf:resource="#cno_0000021"/>
+    <owl:disjointWith rdf:resource="#cno_0000025"/>
+    <owl:disjointWith rdf:resource="#cno_0000024"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >two variable model</rdfs:label>
     <rdfs:subClassOf rdf:resource="#cno_0000018"/>
@@ -3904,8 +3916,8 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000121">
-    <owl:disjointWith rdf:resource="#cno_0000122"/>
     <owl:disjointWith rdf:resource="#cno_0000123"/>
+    <owl:disjointWith rdf:resource="#cno_0000122"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >recurrent</rdfs:label>
     <rdfs:subClassOf rdf:resource="#cno_0000119"/>
@@ -3916,10 +3928,10 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <rdfs:subClassOf>
       <owl:Class rdf:about="#cno_0000002"/>
     </rdfs:subClassOf>
-    <owl:disjointWith rdf:resource="#cno_0000197"/>
-    <owl:disjointWith rdf:resource="#cno_0000058"/>
-    <owl:disjointWith rdf:resource="#cno_0000045"/>
     <owl:disjointWith rdf:resource="#cno_0000036"/>
+    <owl:disjointWith rdf:resource="#cno_0000045"/>
+    <owl:disjointWith rdf:resource="#cno_0000058"/>
+    <owl:disjointWith rdf:resource="#cno_0000197"/>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >a model component that is used to build synaptic model types.</core:definition>
   </owl:Class>
@@ -3929,18 +3941,18 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >excitatory action</rdfs:label>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000113"/>
+      <owl:Class rdf:ID="cno_0000112"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000112"/>
+      <owl:Class rdf:ID="cno_0000113"/>
     </owl:disjointWith>
     <rdfs:subClassOf rdf:resource="#cno_0000094"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000182">
     <core:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >short term plasticity rule</core:altLabel>
-    <owl:disjointWith rdf:resource="#cno_0000183"/>
     <owl:disjointWith rdf:resource="#cno_0000187"/>
+    <owl:disjointWith rdf:resource="#cno_0000183"/>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >model of synaptic plasticity that describes the short term changes in the synaptic activity.</core:definition>
     <rdfs:subClassOf rdf:resource="#cno_0000034"/>
@@ -3968,18 +3980,18 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000016"/>
     <owl:disjointWith rdf:resource="#cno_0000093"/>
-    <owl:disjointWith rdf:resource="#cno_0000015"/>
-    <owl:disjointWith rdf:resource="#cno_0000071"/>
-    <owl:disjointWith rdf:resource="#cno_0000080"/>
     <owl:disjointWith rdf:resource="#cno_0000074"/>
+    <owl:disjointWith rdf:resource="#cno_0000080"/>
+    <owl:disjointWith rdf:resource="#cno_0000071"/>
+    <owl:disjointWith rdf:resource="#cno_0000015"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Fitzhugh-Nagumo model</rdfs:label>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000067"/>
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000061"/>
-    <owl:disjointWith rdf:resource="#cno_0000076"/>
     <owl:disjointWith rdf:resource="#cno_0000189"/>
+    <owl:disjointWith rdf:resource="#cno_0000076"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000079"/>
     </owl:disjointWith>
@@ -4013,10 +4025,10 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000073"/>
     <owl:disjointWith rdf:resource="#cno_0000076"/>
+    <owl:disjointWith rdf:resource="#cno_0000091"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000067"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000091"/>
     <owl:disjointWith rdf:resource="#cno_0000061"/>
     <owl:disjointWith rdf:resource="#cno_0000015"/>
     <owl:disjointWith>
@@ -4032,8 +4044,8 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:disjointWith rdf:resource="#cno_0000188"/>
     <owl:disjointWith rdf:resource="#cno_0000078"/>
     <owl:disjointWith rdf:resource="#cno_0000072"/>
-    <owl:disjointWith rdf:resource="#cno_0000093"/>
     <owl:disjointWith rdf:resource="#cno_0000189"/>
+    <owl:disjointWith rdf:resource="#cno_0000093"/>
     <owl:disjointWith rdf:resource="#cno_0000090"/>
     <owl:disjointWith rdf:resource="#cno_0000016"/>
   </owl:Class>
@@ -4105,10 +4117,10 @@ These specific instances are then specified with the use of the class "Parameter
     >fixed threshold</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000112">
+    <owl:disjointWith rdf:resource="#cno_0000111"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000113"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000111"/>
     <rdfs:subClassOf rdf:resource="#cno_0000094"/>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >a synaptic action that decreases the post-synaptic activity and/or voltage</core:definition>
@@ -4121,10 +4133,10 @@ These specific instances are then specified with the use of the class "Parameter
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >represents the models without specified morphology</core:definition>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000053"/>
+      <owl:Class rdf:ID="cno_0000054"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000054"/>
+      <owl:Class rdf:ID="cno_0000053"/>
     </owl:disjointWith>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#cno_0000042"/>
@@ -4161,9 +4173,9 @@ These specific instances are then specified with the use of the class "Parameter
     >current type</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000195">
-    <owl:disjointWith rdf:resource="#cno_0000196"/>
-    <owl:disjointWith rdf:resource="#cno_0000107"/>
     <owl:disjointWith rdf:resource="#cno_0000110"/>
+    <owl:disjointWith rdf:resource="#cno_0000107"/>
+    <owl:disjointWith rdf:resource="#cno_0000196"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >developmental learning</rdfs:label>
     <rdfs:subClassOf rdf:resource="#cno_0000169"/>
@@ -4201,8 +4213,8 @@ These specific instances are then specified with the use of the class "Parameter
     >a cellular distribution that is defined based on criterions derived from anatomical information</core:definition>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >anatomically defined</rdfs:label>
-    <owl:disjointWith rdf:resource="#cno_0000157"/>
     <owl:disjointWith rdf:resource="#cno_0000159"/>
+    <owl:disjointWith rdf:resource="#cno_0000157"/>
     <rdfs:subClassOf rdf:resource="#cno_0000178"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000083">
@@ -4246,25 +4258,12 @@ These specific instances are then specified with the use of the class "Parameter
     >definition based on element from NCI Thesaurus: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Element_Part</rdfs:comment>
     <owl:disjointWith rdf:resource="#cno_0000176"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <core:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >model element</core:altLabel>
-    <owl:disjointWith rdf:resource="#cno_0000175"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000001"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000004"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >model component</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="cno_0000063"/>
-        </owl:onProperty>
-        <owl:someValuesFrom rdf:resource="#cno_0000003"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <core:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >model element</core:altLabel>
+    <owl:disjointWith rdf:resource="#cno_0000175"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -4273,10 +4272,23 @@ These specific instances are then specified with the use of the class "Parameter
         <owl:someValuesFrom rdf:resource="#cno_0000003"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="#cno_0000004"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >model component</rdfs:label>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >This class is based on the assumption that models can represented as particular assemblies of components that can be either specific to the different level of description (cellular, synaptic and network) or generic.</rdfs:comment>
     <owl:disjointWith rdf:resource="#cno_0000174"/>
     <owl:disjointWith rdf:resource="#cno_0000003"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="#cno_0000003"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="cno_0000063"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <owl:disjointWith rdf:resource="http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#EnumerationClass"/>
   </owl:Class>
@@ -4304,10 +4316,10 @@ These specific instances are then specified with the use of the class "Parameter
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >a cellular model that represents the electrical activity of a nerve cell with simplified function</core:definition>
     <owl:disjointWith>
-      <owl:Class rdf:about="#cno_0000014"/>
+      <owl:Class rdf:ID="cno_0000013"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000013"/>
+      <owl:Class rdf:about="#cno_0000014"/>
     </owl:disjointWith>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >artificial neuron model</rdfs:label>
@@ -4316,10 +4328,10 @@ These specific instances are then specified with the use of the class "Parameter
   </owl:Class>
   <owl:Class rdf:ID="cno_0000154">
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000153"/>
+      <owl:Class rdf:ID="cno_0000155"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="cno_0000155"/>
+      <owl:Class rdf:ID="cno_0000153"/>
     </owl:disjointWith>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#cno_0000152"/>
@@ -4331,8 +4343,8 @@ These specific instances are then specified with the use of the class "Parameter
     <rdfs:subClassOf rdf:resource="#cno_0000094"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >shunting action</rdfs:label>
-    <owl:disjointWith rdf:resource="#cno_0000111"/>
     <owl:disjointWith rdf:resource="#cno_0000112"/>
+    <owl:disjointWith rdf:resource="#cno_0000111"/>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >a synaptic action that modifies the global conductance of the post-synaptic model</core:definition>
   </owl:Class>
@@ -4388,13 +4400,13 @@ These specific instances are then specified with the use of the class "Parameter
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000193"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000132"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000152"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000132"/>
     <rdfs:subClassOf rdf:resource="#cno_0000003"/>
-    <owl:disjointWith rdf:resource="#cno_0000136"/>
     <owl:disjointWith rdf:resource="#cno_0000141"/>
+    <owl:disjointWith rdf:resource="#cno_0000136"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >rate</rdfs:label>
     <owl:disjointWith rdf:resource="#cno_0000130"/>
@@ -4408,10 +4420,10 @@ These specific instances are then specified with the use of the class "Parameter
     >network model composed of artificial neuron models.</core:definition>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >corresponds to Kohonen maps, Multiple Layer perceptron, ...</rdfs:comment>
-    <owl:disjointWith rdf:resource="#cno_0000030"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000028"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000030"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000127">
     <owl:disjointWith rdf:resource="#cno_0000039"/>
@@ -4427,9 +4439,9 @@ These specific instances are then specified with the use of the class "Parameter
     </owl:disjointWith>
     <owl:disjointWith rdf:resource="#cno_0000120"/>
     <owl:disjointWith rdf:resource="#cno_0000126"/>
-    <owl:disjointWith rdf:resource="#cno_0000128"/>
-    <owl:disjointWith rdf:resource="#cno_0000043"/>
     <owl:disjointWith rdf:resource="#cno_0000042"/>
+    <owl:disjointWith rdf:resource="#cno_0000043"/>
+    <owl:disjointWith rdf:resource="#cno_0000128"/>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >a cellular model component that represents the location of the current source on a neuronal model (somatic, primary dendrite, ...)</core:definition>
     <rdfs:subClassOf rdf:resource="#cno_0000036"/>
@@ -4466,8 +4478,8 @@ These specific instances are then specified with the use of the class "Parameter
     <rdfs:subClassOf rdf:resource="#cno_0000036"/>
     <owl:disjointWith rdf:resource="#cno_0000126"/>
     <owl:disjointWith rdf:resource="#cno_0000083"/>
-    <owl:disjointWith rdf:resource="#cno_0000042"/>
     <owl:disjointWith rdf:resource="#cno_0000039"/>
+    <owl:disjointWith rdf:resource="#cno_0000042"/>
     <owl:disjointWith rdf:resource="#cno_0000128"/>
     <owl:disjointWith rdf:resource="#cno_0000041"/>
   </owl:Class>
@@ -4489,10 +4501,10 @@ These specific instances are then specified with the use of the class "Parameter
     <rdfs:subClassOf>
       <owl:Class rdf:about="#cno_0000152"/>
     </rdfs:subClassOf>
-    <owl:disjointWith rdf:resource="#cno_0000154"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000153"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000154"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000211">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -4502,10 +4514,10 @@ These specific instances are then specified with the use of the class "Parameter
     >a component of a synaptic plasticity rule that describes the dependency of synaptic changes on the relative spike timing in the pre- and post-synaptic models</core:definition>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000079">
-    <owl:disjointWith rdf:resource="#cno_0000070"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000068"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000070"/>
     <owl:disjointWith rdf:resource="#cno_0000093"/>
     <rdfs:subClassOf rdf:resource="#cno_0000060"/>
     <owl:disjointWith>
@@ -4524,19 +4536,19 @@ These specific instances are then specified with the use of the class "Parameter
     >cumulative spike response model</rdfs:label>
     <owl:disjointWith rdf:resource="#cno_0000074"/>
     <owl:disjointWith rdf:resource="#cno_0000078"/>
-    <owl:disjointWith rdf:resource="#cno_0000073"/>
     <owl:disjointWith rdf:resource="#cno_0000091"/>
+    <owl:disjointWith rdf:resource="#cno_0000073"/>
     <owl:disjointWith rdf:resource="#cno_0000066"/>
-    <owl:disjointWith rdf:resource="#cno_0000090"/>
-    <owl:disjointWith rdf:resource="#cno_0000016"/>
     <owl:disjointWith rdf:resource="#cno_0000072"/>
-    <owl:disjointWith rdf:resource="#cno_0000162"/>
+    <owl:disjointWith rdf:resource="#cno_0000016"/>
+    <owl:disjointWith rdf:resource="#cno_0000090"/>
     <owl:disjointWith rdf:resource="#cno_0000065"/>
+    <owl:disjointWith rdf:resource="#cno_0000162"/>
+    <owl:disjointWith rdf:resource="#cno_0000071"/>
+    <owl:disjointWith rdf:resource="#cno_0000015"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000069"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000015"/>
-    <owl:disjointWith rdf:resource="#cno_0000071"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000011">
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -4544,9 +4556,9 @@ These specific instances are then specified with the use of the class "Parameter
     <rdfs:subClassOf>
       <owl:Class rdf:about="#cno_0000001"/>
     </rdfs:subClassOf>
-    <owl:disjointWith rdf:resource="#cno_0000010"/>
-    <owl:disjointWith rdf:resource="#cno_0000008"/>
     <owl:disjointWith rdf:resource="#cno_0000009"/>
+    <owl:disjointWith rdf:resource="#cno_0000008"/>
+    <owl:disjointWith rdf:resource="#cno_0000010"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >plasticity model</rdfs:label>
   </owl:Class>
@@ -4556,14 +4568,6 @@ These specific instances are then specified with the use of the class "Parameter
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <owl:disjointWith rdf:resource="http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl#EnumerationClass"/>
     <owl:disjointWith rdf:resource="#cno_0000004"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="#cno_0000002"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#cno_0000005"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >model type</rdfs:label>
     <owl:disjointWith>
@@ -4574,6 +4578,14 @@ These specific instances are then specified with the use of the class "Parameter
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >a thing that is a category of models regarded as having particular characteristics, qualities, and/or defined similarities.</core:definition>
     <owl:disjointWith rdf:resource="#cno_0000003"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#cno_0000005"/>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="#cno_0000002"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <owl:disjointWith rdf:resource="#cno_0000175"/>
     <core:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >type of model</core:altLabel>
@@ -4624,25 +4636,25 @@ These specific instances are then specified with the use of the class "Parameter
     >adaptive integrate-and-fire</rdfs:label>
     <owl:disjointWith rdf:resource="#cno_0000073"/>
     <owl:disjointWith rdf:resource="#cno_0000079"/>
-    <owl:disjointWith rdf:resource="#cno_0000078"/>
+    <owl:disjointWith rdf:resource="#cno_0000091"/>
     <owl:disjointWith rdf:resource="#cno_0000016"/>
     <owl:disjointWith rdf:resource="#cno_0000072"/>
-    <owl:disjointWith rdf:resource="#cno_0000091"/>
+    <owl:disjointWith rdf:resource="#cno_0000078"/>
     <owl:disjointWith rdf:resource="#cno_0000015"/>
     <owl:disjointWith rdf:resource="#cno_0000071"/>
     <owl:disjointWith rdf:resource="#cno_0000066"/>
     <owl:disjointWith rdf:resource="#cno_0000070"/>
-    <owl:disjointWith rdf:resource="#cno_0000162"/>
     <owl:disjointWith rdf:resource="#cno_0000065"/>
+    <owl:disjointWith rdf:resource="#cno_0000162"/>
     <owl:disjointWith rdf:resource="#cno_0000093"/>
     <owl:disjointWith rdf:resource="#cno_0000090"/>
     <owl:disjointWith rdf:resource="#cno_0000092"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000054">
+    <owl:disjointWith rdf:resource="#cno_0000052"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000053"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000052"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >multiple compartment</rdfs:label>
     <rdfs:subClassOf rdf:resource="#cno_0000042"/>
@@ -4653,17 +4665,17 @@ These specific instances are then specified with the use of the class "Parameter
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >instantaneous rise and monexponential decay</rdfs:label>
     <rdfs:subClassOf rdf:resource="#cno_0000098"/>
+    <owl:disjointWith rdf:resource="#cno_0000116"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000115"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000116"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000124">
     <rdfs:subClassOf rdf:resource="#cno_0000148"/>
-    <owl:disjointWith rdf:resource="#cno_0000206"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000125"/>
     </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#cno_0000206"/>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >a cellular grouping that is defined by common functional criterons</core:definition>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -4690,8 +4702,8 @@ These specific instances are then specified with the use of the class "Parameter
   <owl:Class rdf:about="#cno_0000028">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >rate model</rdfs:label>
-    <owl:disjointWith rdf:resource="#cno_0000030"/>
     <owl:disjointWith rdf:resource="#cno_0000029"/>
+    <owl:disjointWith rdf:resource="#cno_0000030"/>
     <rdfs:subClassOf rdf:resource="#cno_0000010"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000193">
@@ -4726,11 +4738,11 @@ These specific instances are then specified with the use of the class "Parameter
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >an abstract current that represents the mechanism of spiking frequency adaptation.</core:definition>
     <rdfs:subClassOf rdf:resource="#cno_0000049"/>
+    <owl:disjointWith rdf:resource="#cno_0000088"/>
+    <owl:disjointWith rdf:resource="#cno_0000087"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000086"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000087"/>
-    <owl:disjointWith rdf:resource="#cno_0000088"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000210">
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -4749,8 +4761,8 @@ These specific instances are then specified with the use of the class "Parameter
     <owl:disjointWith rdf:resource="#cno_0000141"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >spatial coordinates</rdfs:label>
-    <owl:disjointWith rdf:resource="#cno_0000194"/>
     <owl:disjointWith rdf:resource="#cno_0000131"/>
+    <owl:disjointWith rdf:resource="#cno_0000194"/>
     <owl:disjointWith rdf:resource="#cno_0000191"/>
     <owl:disjointWith rdf:resource="#cno_0000138"/>
     <owl:disjointWith rdf:resource="#cno_0000132"/>
@@ -4793,7 +4805,6 @@ These specific instances are then specified with the use of the class "Parameter
   <owl:Class rdf:about="#cno_0000014">
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >a cellular model that describes the mechanism of action potential emission in biological nerve cell.</core:definition>
-    <rdfs:subClassOf rdf:resource="#cno_0000008"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -4802,10 +4813,11 @@ These specific instances are then specified with the use of the class "Parameter
         <owl:someValuesFrom rdf:resource="#cno_0000041"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#cno_0000008"/>
+    <owl:disjointWith rdf:resource="#cno_0000012"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#cno_0000013"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#cno_0000012"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >spiking model</rdfs:label>
   </owl:Class>
@@ -4813,8 +4825,8 @@ These specific instances are then specified with the use of the class "Parameter
     <rdfs:subClassOf rdf:resource="#cno_0000211"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >suppression model</rdfs:label>
-    <owl:disjointWith rdf:resource="#cno_0000199"/>
     <owl:disjointWith rdf:resource="#cno_0000198"/>
+    <owl:disjointWith rdf:resource="#cno_0000199"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >reference the model from Froemke and Dan, 2002 described in Morrisson, 2008</rdfs:comment>
   </owl:Class>
@@ -4840,27 +4852,27 @@ These specific instances are then specified with the use of the class "Parameter
     <owl:disjointWith rdf:resource="#cno_0000066"/>
     <owl:disjointWith rdf:resource="#cno_0000070"/>
     <owl:disjointWith rdf:resource="#cno_0000189"/>
-    <owl:disjointWith rdf:resource="#cno_0000162"/>
     <owl:disjointWith rdf:resource="#cno_0000065"/>
+    <owl:disjointWith rdf:resource="#cno_0000162"/>
     <owl:disjointWith rdf:resource="#cno_0000093"/>
     <owl:disjointWith rdf:resource="#cno_0000188"/>
     <owl:disjointWith rdf:resource="#cno_0000092"/>
     <owl:disjointWith rdf:resource="#cno_0000062"/>
     <rdfs:subClassOf rdf:resource="#cno_0000060"/>
-    <owl:disjointWith rdf:resource="#cno_0000061"/>
-    <owl:disjointWith rdf:resource="#cno_0000091"/>
     <owl:disjointWith rdf:resource="#cno_0000079"/>
+    <owl:disjointWith rdf:resource="#cno_0000091"/>
+    <owl:disjointWith rdf:resource="#cno_0000061"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000115">
-    <owl:disjointWith rdf:resource="#cno_0000116"/>
     <owl:disjointWith rdf:resource="#cno_0000114"/>
+    <owl:disjointWith rdf:resource="#cno_0000116"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >difference of two exponentials</rdfs:label>
     <rdfs:subClassOf rdf:resource="#cno_0000098"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000053">
-    <owl:disjointWith rdf:resource="#cno_0000054"/>
     <owl:disjointWith rdf:resource="#cno_0000052"/>
+    <owl:disjointWith rdf:resource="#cno_0000054"/>
     <rdfs:subClassOf rdf:resource="#cno_0000042"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >single compartment</rdfs:label>
@@ -4870,8 +4882,8 @@ These specific instances are then specified with the use of the class "Parameter
   <owl:Class rdf:about="#cno_0000125">
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >a cellular grouping that is based on anatomical information</core:definition>
-    <owl:disjointWith rdf:resource="#cno_0000206"/>
     <owl:disjointWith rdf:resource="#cno_0000124"/>
+    <owl:disjointWith rdf:resource="#cno_0000206"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >anatomical grouping</rdfs:label>
     <rdfs:subClassOf rdf:resource="#cno_0000148"/>
@@ -4913,17 +4925,17 @@ These specific instances are then specified with the use of the class "Parameter
     >rebound current</rdfs:label>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >an abstract current that represents the mechanisms of rebound.</core:definition>
-    <owl:disjointWith rdf:resource="#cno_0000087"/>
-    <owl:disjointWith rdf:resource="#cno_0000085"/>
     <owl:disjointWith rdf:resource="#cno_0000088"/>
+    <owl:disjointWith rdf:resource="#cno_0000085"/>
+    <owl:disjointWith rdf:resource="#cno_0000087"/>
     <rdfs:subClassOf rdf:resource="#cno_0000049"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000153">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >2D coordinates</rdfs:label>
     <rdfs:subClassOf rdf:resource="#cno_0000152"/>
-    <owl:disjointWith rdf:resource="#cno_0000154"/>
     <owl:disjointWith rdf:resource="#cno_0000155"/>
+    <owl:disjointWith rdf:resource="#cno_0000154"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000167">
     <rdfs:subClassOf rdf:resource="#cno_0000103"/>
@@ -4950,8 +4962,8 @@ These specific instances are then specified with the use of the class "Parameter
     <owl:disjointWith rdf:resource="#cno_0000076"/>
     <owl:disjointWith rdf:resource="#cno_0000074"/>
     <owl:disjointWith rdf:resource="#cno_0000075"/>
-    <owl:disjointWith rdf:resource="#cno_0000073"/>
     <owl:disjointWith rdf:resource="#cno_0000091"/>
+    <owl:disjointWith rdf:resource="#cno_0000073"/>
     <owl:disjointWith rdf:resource="#cno_0000079"/>
     <owl:disjointWith rdf:resource="#cno_0000016"/>
     <owl:disjointWith rdf:resource="#cno_0000072"/>
@@ -4976,8 +4988,8 @@ These specific instances are then specified with the use of the class "Parameter
     <owl:disjointWith rdf:resource="#cno_0000100"/>
   </owl:Class>
   <owl:Class rdf:about="#cno_0000013">
-    <owl:disjointWith rdf:resource="#cno_0000014"/>
     <owl:disjointWith rdf:resource="#cno_0000012"/>
+    <owl:disjointWith rdf:resource="#cno_0000014"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     ></rdfs:comment>
     <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"

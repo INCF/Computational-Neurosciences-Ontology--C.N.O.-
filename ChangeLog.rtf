@@ -1,0 +1,214 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red69\green69\blue69;\red255\green255\blue255;\red0\green0\blue0;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f0\fs24 \cf0 Computational Neuroscience Ontology - Change Log\
+\
+Yann Le Franc, PhD\
+28/12/2012\
+\
+This document tracks the changes made on CNO version 0.2.4\
+As CNO is still an alpha version and is undergoing major changes, updates were made using recycling of cno Ids to replace inappropriate terms. \
+Starting with version 0.5, a deprecation policy will be proposed based on OBI model (www.link).\
+\
+First step: removing disjointness.\
+As CNO is going through major changes, all disjointness information has been removed and will be reconsidered in the next version.\
+\
+Second step: refining CNO classes\
+\
+The model of CNO has been refined to better represent the diversity of models. \
+In the new structure, any type of models can be created using model components. \
+These model components can be either model parameters or aggregated component which represent equations e.g ionic current model containing model parameters.\
+\
+This leads to the following changes:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+\cf0 Terms changes:\
+\
+	a- Updated label\
+\
+cno_0000001: model type --> defined model type\
+This change better reflect the type of class (defined class).\
+cno_0000003: model parameter --> model parameter component\
+cno_0000004: parameter value --> reset potential (recycling of the id)\
+cno_0000007: phenomenological model --> phenomenological plasticity model (disambiguation) \
+cno_0000144: name --> rate-based neuron model (recycling of the id)\
+cno_0000017: biophysical model --> biophysical spiking model (disambiguation) \
+cno_0000018: threshold-based model --> threshold-based spiking model (disambiguation) \
+cno_0000060: named model --> defined model\
+cno_0000061: removed the alternative label Lapicque's model as Lapicque defines a leaky component in his paper.\
+cno_0000075: Rolstein model --> Rotstein model: fix a typo\
+cno_0000089: membrane recovery mechanism --> membrane recovery variable. This term relates to the parameter u in Izhikevich models and should be placed under the model_variable class.\
+cno_0000047: ionic current --> ionic current model\
+cno_0000109: biochemically activated current --> biochemically activated current model\
+cno_0000108: ionic dependent current --> ionic dependent current model\
+cno_0000105: voltage-dependent current --> voltage dependent current model\
+cno_0000106: voltage and ionic dependent current --> voltage and ionic dependent current model\
+cno_0000145: notation --> refractory period (recycling_id)\
+cno_0000146: numerical value --> spiking threshold\
+cno_0000158: abstract --> abstract morphology\
+cno_0000161: structural plasticity model --> developmental plasticity model\
+cno_0000212: weight dependency --> weight update component\
+cno_0000214: additive weight dependency --> weight independent\
+cno_0000215: multiplicative weight dependency --> weight dependent\
+cno_0000216: exponent based weight dependency --> learning rate (recycling_id)	\
+b- Updated definition\
+\
+cno_0000003: definition updated to reflect the change of parent class.\
+cno_0000008: definition to reflect the update of the parent class label.\
+cno_0000009: same as cno_0000008\
+cno_0000010: same as cno_0000008\
+cno_0000011: same as cno_0000008\
+cno_0000144: updated to define the new label\
+cno_00000026: update the definition to integrate the comment (post-synaptic voltage is considered constant).\
+cno_0000027: update the definition to integrate the comment (post-synaptic voltage is variable)\
+cno_0000031: improve definition\
+cno_0000033: improve definition\
+cno_0000034: improve definition\
+cno_0000036: update the definition to reflect the change of parent class.\
+cno_0000037: same as cno_0000036\
+cno_0000038: updated definition to reflect the change of parent class.\
+cno_0000047: improved definition\
+cno_0000048: updated definition to reflect the parent class.\
+cno_0000049: improved definition\
+cno_0000052: improved definition\
+cno_0000053: improved definition\
+cno_0000054: improved definition\
+cno_0000055: improved definition\
+cno_0000056: improved definition\
+cno_0000081: improved definition\
+cno_0000082: improved definition\
+cno_0000087: updated definition based on Wikipedia\
+cno_0000088: updated definition based on Wikipedia\
+cno_0000217: updated definition based on Scholarpedia\
+cno_0000095: updated definition. Should reconsider this term carefully (obsoletion/recycling)?\
+cno_0000101: improved definition.\
+cno_0000108: updated definition to account for the change of superclass.\
+cno_0000145: updated definition to account for the change of label.\
+cno_0000146: updated definition to account for the change of label\
+cno_0000166: updated definition\
+cno_0000214: updated definition\
+\
+	c- New definition\
+\
+cno_0000007: definition based on Scholarpedia\
+cno_0000015: definition based on abstract Brunel, JCNS 2000\
+cno_0000016: definition based on Wikipedia\
+cno_0000060: added missing definition.\
+cno_0000061: added missing definition based on Wikipedia.\
+cno_0000062: added definition based on Scholarpedia\
+cno_0000065: added definition based on Ostojic and al., PlosCompBiol 2011\
+cno_0000066: added definition based on Wikipedia\
+cno_0000067: added definition based on the definition of con_0000065.\
+cno_0000068: added definition based on Wikipedia\
+cno_0000069: added definition based on "Computational Modeling Methods for Neuroscientists" edited by E. De Schutter.\
+cno_0000070: added definition based on the same resource as cno_0000069.\
+cno_0000071: added definition based on the same resource as cno_0000069\
+cno_0000072: added definition based on the same resource as cno_0000069\
+cno_0000073: added definition\
+cno_0000074: added definition based on Wikipedia\
+cno_0000075: added definition.\
+cno_0000076: added definition\
+cno_0000077: added definition based on Scholarpedia\
+cno_0000078: added definition based on Scholarpedia\
+cno_0000079: added definition based on Scholarpedia\
+cno_0000080: added definition based on Scholarpedia\
+cno_0000083: added definition based on Scholarpedia\
+cno_0000084: added definition based on Scholarpedia\
+cno_0000089: added definition based on the publication 
+\f1 \cf2 \cb3 PMID: 18244602\
+\cf4 cno_0000090: added definition based on Scholarpedia\
+cno_0000091: added definition\
+cno_0000092: \cf0 \cb1 added definition based on Scholarpedia\
+cno_0000093: added definition based on Scholarpedia\
+
+\f0 cno_0000096: added definition based on Wikipedia. Should be under the model parameter class\
+cno_0000097: added definition to point to the plasticity models. Need to reconsider the use of this term.\
+cno_0000099: added definition. Should be under the model parameter class\
+cno_0000100: added definition. \
+cno_0000103: added definition. Need improvement.\
+cno_0000104: added definition. Need improvement.\
+cno_0000107: added definition based on Wikipedia. Need improvement.\
+cno_0000110: added definition. Clearly need improvement!\
+cno_0000195: added definition. Clearly need improvement.\
+cno_0000196: added definition based on Scholarpedia. Need improvement.\
+cno_0000114: added definition based on "Computational Modeling Methods for Neuroscientists" edited by E. De Schutter. Need refinement.\
+cno_0000115: added definition based on "Computational Modeling Methods for Neuroscientists" edited by E. De Schutter. Need improvement.\
+cno_0000116: added definition based on "Computational Modeling Methods for Neuroscientists" edited by E. De Schutter.\
+cno_0000120: added definition. Need improvement.\
+cno_0000121: added definition based on Wikipedia. Need improvement.\
+cno_0000122: added definition based on Wikipedia. Need improvement.\
+cno_0000123: added definition based on Wikipedia. Need refinement.\
+cno_0000156: added definition. This term should be transformed into a Datatype.\
+cno_0000158: added definition. Need improvement.\
+cno_0000160: added definition.\
+cno_0000162: added definition based on Wikipedia\
+cno_0000163: added definition: should be transformed into a datatype?\
+cno_0000165: added definition.\
+cno_0000167: added definition.\
+cno_0000168: added definition. Should be a quality.\
+cno_0000169: added definition based on Wikipedia.\
+cno_0000170: added definition\
+cno_0000171: added definition\
+cno_0000172: added definition\
+cno_0000187: added definition based on Wikipedia.\
+cno_0000188: added definition based on Tsodyks and al, PNAS, 1997.\
+cno_0000189: added definition based on Scholarpedia\
+cno_0000198: added definition - Need improvement\
+cno_0000199: added definition - Need improvement\
+cno_0000200: added definition - Need improvement\
+cno_0000215: added definition based on Scholarpedia\
+cno_0000216: added definition - Need improvement\
+cno_0000219: added definition\
+\
+	d- New term\
+cno_0000218 (aggregated model component)\
+cno_0000219 (model variable component)\
+cno_0000220 (membrane capacitance)\
+cno_0000221 (membrane resistance)\
+cno_0000222 (membrane time constant)\
+\
+	e- New classification\
+\
+cno_0000003 (model parameter) has been moved under cno_0000002 (model component)\
+cno_0000038 (resting membrane potential) has been moved under cno_0000003 (model parameter component)\
+cno_0000108 (ionic dependent current) has been placed under the class of biochemically activated current.\
+cno_0000216 (learning rate) has been place under the class of model parameter.\
+	\
+	f- Updated comment:\
+cno_0000003: removed comment\
+cno_0000057: added comment or note to flag an issue with the distinction between calcium dynamic and biochemical dynamic.\
+\
+Deprecation/Recycling\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+\cf0 \
+cno_0000004: parameter values\
+cno_0000144: name --> transformed into datatype property (recycled)\
+cno_0000145: notation --> transformed into datatype property (recycled)\
+cno_0000146: numerical value --> transformed into datatype property (recycled)\
+cno_0000147: unit --> transformed into datatype property\
+\
+Second step: Import\
+1- Import BFO1.1\
+2- Import RO\
+3- Import RO-BFO bridge\
+\
+Integration within BFO\
+\
+The first step was to add the existing classes defined in cno version 0.2.4 into BFO. \
+Based on discussion with Fahim Imam and Alan Ruttenberg, the following changes have been made:\
+model type --> generically_dependent_continuant\
+model component --> generically_dependent_continuant\
+named model --> generically_dependent_continuant\
+model description --> generically_dependent_continuant\
+\
+Third step: term mapping\
+\
+\
+\
+\
+\
+}

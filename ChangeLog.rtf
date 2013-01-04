@@ -8,7 +8,7 @@
 \f0\fs24 \cf0 Computational Neuroscience Ontology - Change Log\
 \
 Yann Le Franc, PhD\
-28/12/2012\
+8/12/2012\
 \
 This document tracks the changes made on CNO version 0.2.4\
 As CNO is still an alpha version and is undergoing major changes, updates were made using recycling of cno Ids to replace inappropriate terms. \
@@ -192,21 +192,31 @@ cno_0000146: numerical value --> transformed into datatype property (recycled)\
 cno_0000147: unit --> transformed into datatype property\
 \
 Second step: Import\
+\
 1- Import BFO1.1\
 2- Import RO\
 3- Import RO-BFO bridge\
+\
+Import made on 15/12/2012\
 \
 Integration within BFO\
 \
 The first step was to add the existing classes defined in cno version 0.2.4 into BFO. \
 Based on discussion with Fahim Imam and Alan Ruttenberg, the following changes have been made:\
-model type --> generically_dependent_continuant\
+defined model type --> generically_dependent_continuant\
 model component --> generically_dependent_continuant\
-named model --> generically_dependent_continuant\
+defined model --> generically_dependent_continuant\
 model description --> generically_dependent_continuant\
+\
+model quality --> specifically_dependent_continuant/quality\
+\
+The previous relations defined in CNO have been removed and will be replaced by relation defined in the Relation Ontology. In particular, the relation used to link model types and model components is: has_part.\
 \
 Third step: term mapping\
 \
+In order to import small parts of other biomedical ontologies such as SBO, IAO or OBI, we are using MIREOT and the tools provided by OBI that can be found here with a tutorial: {\field{\*\fldinst{HYPERLINK "http://obi-ontology.org/page/Tutorials"}}{\fldrslt http://obi-ontology.org/page/Tutorials}}\
+\
+After several unsuccessful attempt to generate an externalDerived.owl file using the tools provided in the OBI tutorial, \
 \
 \
 \

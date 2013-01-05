@@ -3,6 +3,7 @@
      xml:base="http://purl.org/incf/ontology/Computational_Neurosciences/external_import/external.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -40,6 +41,9 @@
         <obo:IAO_0000111 xml:lang="en">editor note</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
         <rdfs:label xml:lang="en">has curation status</rdfs:label>
         <obo:IAO_0000119 xml:lang="en">OBI_0000281</obo:IAO_0000119>
@@ -47,9 +51,6 @@
         <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
-        <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
         <rdfs:label xml:lang="en">definition source</rdfs:label>
@@ -88,6 +89,14 @@
         <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">example</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
     
 
@@ -106,42 +115,126 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <rdfs:label xml:lang="en">is about</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
+        <obo:IAO_0000112 xml:lang="en">This document is about information artifacts and their representations</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">is_about is a (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000142 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000142">
+        <rdfs:label xml:lang="en">mentions</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">7/6/2009 Alan Ruttenberg. P4 RC1 munges our GCI so remove it for now: mentions some entity equivalentTo has_part some (&#39;generically denotes&#39; some entity)</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">7/6/2009 Alan Ruttenberg: Add this relation following conversation with Jonathan Rees that N&amp;S GCI for is_about was too strong. Really it was simply sufficient. To effect this change we introduce this relation, which is subproperty of is_about, and have previous GCI use this relation &quot;mentions&quot; in it&#39;s (logical) definition</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">An information artifact IA mentions an entity E exactly when it has a component/part that denotes E</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Person: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000219 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000219">
+        <rdfs:label xml:lang="en">denotes</rdfs:label>
+        <obo:IAO_0000112 xml:lang="en">A person&#39;s name denotes the person. A variable name in a computer program denotes some piece of memory. Lexically equivalent strings can denote different things, for instance &quot;Alan&quot; can denote different people. In each case of use, there is a case of the denotation relation obtaining, between &quot;Alan&quot; and the person that is being named.</obo:IAO_0000112>
+        <obo:IAO_0000119 xml:lang="en">Conversations with Barry Smith, Werner Ceusters, Bjoern Peters, Michel Dumontier, Melanie Courtot, James Malone, Bill Hogan</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">denotes is a primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to &#39;pick out&#39; the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:comment>
+            <rdf:Description/>
+        </rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000221 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000221">
+        <rdfs:label xml:lang="en">is quality measurement of</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">8/6/2009 Alan Ruttenberg: The strategy is to be rather specific with this relationship. There are other kinds of measurements that are not of qualities, such as those that measure time. We will add these as separate properties for the moment and see about generalizing later</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000413 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000413">
+        <rdfs:label xml:lang="en">is duration of</rdfs:label>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">relates a process to a time-measurement-datum that represents the duration of the process</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000418 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000418">
+        <rdfs:label xml:lang="en">is quality specification of</rdfs:label>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Person:Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">a relation between a data item and a quality of a material entity where the material entity is the specified output of a material transformation which achieves an objective specification that indicates the intended value of the specified quality.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-	<!--  http://purl.obolibrary.org/obo/SBO_0000567  -->
-	<owl:Class rdf:about="http://purl.obolibrary.org/obo/SBO_0000567">
-		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">universal gas constant</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000005"/>
-		<obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-		A physical constant featured in many fundamental equations in the physical sciences. It is equivalent to the Boltzmann constant, but expressed in units of energy per temperature increment per mole (rather than energy per temperature increment per particle). It has the value 8.314 J.K-1.mol-1 and is denoted by the symbol R.
-		</obo:IAO_0000115>
-		<oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBO:0000567</oboInOwl:id>
-		<oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gas constant</oboInOwl:hasRelatedSynonym>
-		<oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ideal gas constant</oboInOwl:hasRelatedSynonym>
-		<oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molar gas constant</oboInOwl:hasRelatedSynonym>
-		<oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sbo</oboInOwl:hasOBONamespace>
-		<obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-	</owl:Class>
-	
-	<!--  http://purl.obolibrary.org/obo/SBO_0000568  -->
-	<owl:Class rdf:about="http://purl.obolibrary.org/obo/SBO_0000568">
-		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Faraday constant</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000005"/>
-		<obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-		Named after Michael Faraday, it is the magnitude of electric charge per mole of electrons. It has the value 96,485.3365 C/mol (Coulombs per Mole), and the symbol F.
-		</obo:IAO_0000115>
-		<oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBO:0000568</oboInOwl:id>
-		<oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sbo</oboInOwl:hasOBONamespace>
-		<obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
-	</owl:Class>
+    
 
-	<!--
-	 http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000005 
-	-->
-	<owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000005"/>
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:label xml:lang="en">information content entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
+        <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Class>
+    
+
 
     <!-- http://purl.obolibrary.org/obo/OBI_0001617 -->
 
@@ -164,7 +257,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SBO_0000009">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kinetic constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000147"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numerical parameter that quantifies the velocity of a chemical reaction.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBO:0000009</oboInOwl:id>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reaction rate constant</oboInOwl:hasRelatedSynonym>
@@ -475,7 +568,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SBO_0000148">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temperature difference</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000147"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBO:0000148</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sbo</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
@@ -712,7 +805,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SBO_0000254">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electrical resistance</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000147"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measure of the degree to which an object opposes the passage of an electric current. The SI unit of electrical resistance is the ohm.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBO:0000254</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sbo</oboInOwl:hasOBONamespace>
@@ -725,7 +818,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SBO_0000257">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conductance</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000147"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measure of how easily electricity flows along a certain path through an electrical element. The SI derived unit of conductance is the Siemens.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBO:0000257</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sbo</oboInOwl:hasOBONamespace>
@@ -738,7 +831,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SBO_0000258">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">capacitance</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000147"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measure of the amount of electric charge stored (or separated) for a given electric potential. The unit of capacitance id the Farad.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBO:0000258</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sbo</oboInOwl:hasOBONamespace>
@@ -751,7 +844,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SBO_0000259">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">voltage</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000147"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Difference of electrical potential between two points of an electrical network, expressed in volts.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBO:0000259</oboInOwl:id>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electrical potential difference</oboInOwl:hasRelatedSynonym>
@@ -926,7 +1019,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SBO_0000346">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temporal measure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000147"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fundamental quantity of the measuring system used to sequence events, to compare the durations of events and the intervals between them, and to quantify the motions or the transformation of entities. The SI base unit for time is the SI second. The second is the duration of 9,192,631,770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the caesium 133 atom.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBO:0000346</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sbo</oboInOwl:hasOBONamespace>
@@ -1031,7 +1124,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SBO_0000360">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quantity of an entity pool</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000147"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBO:0000360</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The enumeration of co-localised, identical biochemical entities of a specific state, which constitute a pool. The form of enumeration may be purely numerical, or may be given in relation to another dimension such as length or volume.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sbo</oboInOwl:hasOBONamespace>
@@ -1109,7 +1202,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SBO_0000380">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biochemical coefficient</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000147"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBO:0000380</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">number used as a multiplicative or exponential factor for quantities, expressions or functions</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sbo</oboInOwl:hasOBONamespace>
@@ -1122,7 +1215,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SBO_0000465">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spatial measure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000147"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBO:0000465</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The measurable dimensions of an object which are minimally required to define the space that an object occupies.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sbo</oboInOwl:hasOBONamespace>
@@ -1279,7 +1372,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SBO_0000492">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amplitude</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000147"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amplitude is the magnitude of change in the oscillating variable, with each oscillation, within an oscillating system. </obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBO:0000492</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sbo</oboInOwl:hasOBONamespace>
@@ -1589,7 +1682,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SBO_0000538">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ionic permeability</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000147"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A parameter that represents the permeability of an ion channel with respect to a particular ion.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBO:0000538</oboInOwl:id>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">membrane permeability</oboInOwl:hasRelatedSynonym>
@@ -1603,7 +1696,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SBO_0000539">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">probabilistic parameter</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000147"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quantitative parameter that represents a probability value, assigned to a specific event.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBO:0000539</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sbo</oboInOwl:hasOBONamespace>
@@ -1645,6 +1738,35 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SBO_0000538"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBO:0000566</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The permeability of an ion through a channel or membrane expressed in relation to the reference ion, which is given the value 1. For example, if a membrane is most permeable to K+, then that is assigned the reference permeability value of 1, and the value for Na+ may be 0.05.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sbo</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SBO_0000567 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SBO_0000567">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">universal gas constant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000005"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A physical constant featured in many fundamental equations in the physical sciences. It is equivalent to the Boltzmann constant, but expressed in units of energy per temperature increment per mole (rather than energy per temperature increment per particle). It has the value 8.314 J.K-1.mol-1 and is denoted by the symbol R.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBO:0000567</oboInOwl:id>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gas constant</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ideal gas constant</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molar gas constant</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sbo</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SBO_0000568 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SBO_0000568">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Faraday constant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000005"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Named after Michael Faraday, it is the magnitude of electric charge per mole of electrons. It has the value 96,485.3365 C/mol (Coulombs per Mole), and the symbol F.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBO:0000568</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sbo</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sbo.owl"/>
     </owl:Class>
@@ -1716,15 +1838,27 @@
     
 
 
-    <!-- http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000147 -->
+    <!-- http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000005 -->
 
-    <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000147"/>
+    <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000005"/>
     
 
 
     <!-- http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000175 -->
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000175"/>
+    
+
+
+    <!-- http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181 -->
+
+    <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
 </rdf:RDF>
 
 

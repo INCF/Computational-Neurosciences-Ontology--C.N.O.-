@@ -162,6 +162,14 @@ The source of the definition can be defined with class from OBO-annotation</rdfs
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SBO_0000348 -->
+
+    <rdf:Description rdf:about="&j.0;SBO_0000348">
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000140"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000001 -->
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000001">
@@ -212,7 +220,7 @@ The source of the definition can be defined with class from OBO-annotation</rdfs
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000004">
         <rdfs:label rdf:datatype="&xsd;string">reset potential</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
+        <rdfs:subClassOf rdf:resource="&j.0;SBO_0000259"/>
         <owl:disjointWith rdf:resource="&core;Collection"/>
         <owl:disjointWith rdf:resource="&core;Concept"/>
         <owl:disjointWith rdf:resource="&core;ConceptScheme"/>
@@ -566,7 +574,7 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000038">
         <rdfs:label rdf:datatype="&xsd;string">resting membrane potential</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
+        <rdfs:subClassOf rdf:resource="&j.0;SBO_0000259"/>
         <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
         <core:definition rdf:datatype="&xsd;string">model parameter component that represent the value of the neuronal membrane potential at rest</core:definition>
     </owl:Class>
@@ -794,7 +802,13 @@ time during the emission of an action potential.</core:definition>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000060">
         <rdfs:label rdf:datatype="&xsd;string">defined model</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000180"/>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000002"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&snap;GenericallyDependentContinuant"/>
         <owl:disjointWith rdf:resource="&core;Collection"/>
         <owl:disjointWith rdf:resource="&core;Concept"/>
         <owl:disjointWith rdf:resource="&core;ConceptScheme"/>
@@ -1234,7 +1248,7 @@ time during the emission of an action potential.</core:definition>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000099">
         <rdfs:label rdf:datatype="&xsd;string">synaptic delay</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
+        <rdfs:subClassOf rdf:resource="&j.0;SBO_0000225"/>
         <core:definition rdf:datatype="&xsd;string">a synapse model component that represent the delay between the activation of the synapse and its impact on the post-synaptic model.</core:definition>
     </owl:Class>
     
@@ -1580,7 +1594,7 @@ time during the emission of an action potential.</core:definition>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000133">
         <rdfs:label rdf:datatype="&xsd;string">diameter</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
+        <rdfs:subClassOf rdf:resource="&j.0;SBO_0000465"/>
     </owl:Class>
     
 
@@ -1616,7 +1630,7 @@ time during the emission of an action potential.</core:definition>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000137">
         <rdfs:label rdf:datatype="&xsd;string">maximal conductance</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
+        <rdfs:subClassOf rdf:resource="&j.0;SBO_0000257"/>
     </owl:Class>
     
 
@@ -1634,7 +1648,7 @@ time during the emission of an action potential.</core:definition>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000139">
         <rdfs:label rdf:datatype="&xsd;string">spike time</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
+        <rdfs:subClassOf rdf:resource="&j.0;SBO_0000346"/>
     </owl:Class>
     
 
@@ -1643,7 +1657,7 @@ time during the emission of an action potential.</core:definition>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000140">
         <rdfs:label rdf:datatype="&xsd;string">time constant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
+        <rdfs:subClassOf rdf:resource="&j.0;SBO_0000346"/>
     </owl:Class>
     
 
@@ -1699,7 +1713,7 @@ time during the emission of an action potential.</core:definition>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000146">
         <rdfs:label rdf:datatype="&xsd;string">spiking threshold</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
+        <rdfs:subClassOf rdf:resource="&j.0;SBO_0000259"/>
         <core:definition rdf:datatype="&xsd;string">... that represents the value above which the model emits a spike</core:definition>
     </owl:Class>
     
@@ -2059,7 +2073,14 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000180">
         <rdfs:label rdf:datatype="&xsd;string">model</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000002"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&snap;GenericallyDependentContinuant"/>
+        <j.0:IAO_0000115 rdf:datatype="&xsd;string">a generically_dependent_continuant that is a placeholder for any model</j.0:IAO_0000115>
     </owl:Class>
     
 
@@ -2296,6 +2317,12 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000205">
         <rdfs:label rdf:datatype="&xsd;string">ModelDB accession number</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&j.0;IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000180"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000175"/>
         <j.0:IAO_0000115 rdf:datatype="&xsd;string">A CRID symbol that is sufficient to look up a model from ModelDB</j.0:IAO_0000115>
     </owl:Class>
@@ -2447,7 +2474,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000220">
         <rdfs:label rdf:datatype="&xsd;string">membrane capacitance</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
+        <rdfs:subClassOf rdf:resource="&j.0;SBO_0000258"/>
     </owl:Class>
     
 
@@ -2456,7 +2483,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000221">
         <rdfs:label rdf:datatype="&xsd;string">membrane resistance</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
+        <rdfs:subClassOf rdf:resource="&j.0;SBO_0000254"/>
     </owl:Class>
     
 

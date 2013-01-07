@@ -112,7 +112,7 @@ The source of the definition can be defined with class from OBO-annotation</rdfs
     <!-- http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000204 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000204">
-        <rdfs:label rdf:datatype="&xsd;string">value</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">numerical value</rdfs:label>
         <rdfs:domain rdf:resource="&snap;GenericallyDependentContinuant"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
@@ -171,7 +171,7 @@ The source of the definition can be defined with class from OBO-annotation</rdfs
         <owl:disjointWith rdf:resource="&core;Concept"/>
         <owl:disjointWith rdf:resource="&core;ConceptScheme"/>
         <rdfs:comment rdf:datatype="&xsd;string">This general class includes the most common types of models classified based on the level of description of the nervous system.</rdfs:comment>
-        <core:definition rdf:datatype="&xsd;string">a generically_dependent_continuant that is a category of models regarded as having particular characteristics, qualities, and/or defined similarities.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">a generically_dependent_continuant that is a category of models regarded as sharing particular characteristics, qualities, and/or defined similarities.</core:definition>
         <core:altLabel rdf:datatype="&xsd;string">defined type of model</core:altLabel>
         <rdfs:comment rdf:datatype="&xsd;string">definition based on the following NCI thesaurus entry: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Type_of_Event</rdfs:comment>
     </owl:Class>
@@ -2295,7 +2295,9 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
     <!-- http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000205 -->
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000205">
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000209"/>
+        <rdfs:label rdf:datatype="&xsd;string">ModelDB accession number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000175"/>
+        <j.0:IAO_0000115 rdf:datatype="&xsd;string">A CRID symbol that is sufficient to look up a model from ModelDB</j.0:IAO_0000115>
     </owl:Class>
     
 

@@ -473,7 +473,7 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000028">
         <rdfs:label rdf:datatype="&xsd;string">rate model</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000010"/>
-        <j.0:IAO_0000115 rdf:datatype="&xsd;string">network model composed of rate-based neuron models</j.0:IAO_0000115>
+        <core:definition rdf:datatype="&xsd;string">network model composed of rate-based neuron models</core:definition>
     </owl:Class>
     
 
@@ -847,7 +847,7 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
         <rdfs:label rdf:datatype="&xsd;string">independent variable</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000219"/>
         <obo_annot:definingCitationURI rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Variable_(mathematics)</obo_annot:definingCitationURI>
-        <j.0:IAO_0000115 rdf:datatype="&xsd;string">variable regarded as inputs to a system and may take on different values freely</j.0:IAO_0000115>
+        <core:definition rdf:datatype="&xsd;string">variable regarded as inputs to a system and may take on different values freely</core:definition>
     </owl:Class>
     
 
@@ -858,7 +858,7 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
         <rdfs:label rdf:datatype="&xsd;string">dependent variable</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000219"/>
         <obo_annot:definingCitationURI rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Variable_(mathematics)</obo_annot:definingCitationURI>
-        <j.0:IAO_0000115 rdf:datatype="&xsd;string">variable regarded as values that change as a consequence of changes in other values in the system.</j.0:IAO_0000115>
+        <core:definition rdf:datatype="&xsd;string">variable regarded as values that change as a consequence of changes in other values in the system.</core:definition>
     </owl:Class>
     
 
@@ -1645,7 +1645,7 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000138">
         <rdfs:label rdf:datatype="&xsd;string">random</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000143"/>
-        <j.0:IAO_0000115 rdf:datatype="&xsd;string">cellular grouping quality that represents probabilistic grouping of cellular models within network models.</j.0:IAO_0000115>
+        <core:definition rdf:datatype="&xsd;string">cellular grouping quality that represents probabilistic grouping of cellular models within network models.</core:definition>
     </owl:Class>
     
 
@@ -1691,7 +1691,7 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000143">
         <rdfs:label rdf:datatype="&xsd;string">cellular grouping quality</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000202"/>
-        <j.0:IAO_0000115 rdf:datatype="&xsd;string">a model component quality that represent the properties of cellular grouping in network models</j.0:IAO_0000115>
+        <core:definition rdf:datatype="&xsd;string">a model component quality that represent the properties of cellular grouping in network models</core:definition>
     </owl:Class>
     
 
@@ -2087,7 +2087,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&snap;GenericallyDependentContinuant"/>
-        <j.0:IAO_0000115 rdf:datatype="&xsd;string">a generically_dependent_continuant that is a placeholder for any model</j.0:IAO_0000115>
+        <core:definition rdf:datatype="&xsd;string">a generically_dependent_continuant that is a placeholder for any model</core:definition>
     </owl:Class>
     
 
@@ -2097,7 +2097,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181">
         <rdfs:label rdf:datatype="&xsd;string">elementary model component</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000002"/>
-        <j.0:IAO_0000115 rdf:datatype="&xsd;string">an elementary model component is the smallest model component on which aggregated component are built. These elements can have either the role of parameter or the role of variable.</j.0:IAO_0000115>
+        <core:definition rdf:datatype="&xsd;string">an elementary model component is the smallest model component on which aggregated component are built. These elements can have either the role of parameter or the role of variable.</core:definition>
         <obo_annot:definingCitationURI rdf:datatype="&xsd;string">http://www.thefreedictionary.com/elementary</obo_annot:definingCitationURI>
     </owl:Class>
     
@@ -2307,7 +2307,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000202">
         <rdfs:label rdf:datatype="&xsd;string">model component quality</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;Quality"/>
-        <j.0:IAO_0000115 rdf:datatype="&xsd;string">quality exhibited by model components</j.0:IAO_0000115>
+        <core:definition rdf:datatype="&xsd;string">quality exhibited by model components</core:definition>
     </owl:Class>
     
 
@@ -2317,7 +2317,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000203">
         <rdfs:label rdf:datatype="&xsd;string">cellular distribution quality</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000202"/>
-        <j.0:IAO_0000115 rdf:datatype="&xsd;string">model component quality that describes the distribution of cellular model in abstract space</j.0:IAO_0000115>
+        <core:definition rdf:datatype="&xsd;string">model component quality that describes the distribution of cellular model in abstract space</core:definition>
     </owl:Class>
     
 
@@ -2333,7 +2333,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000175"/>
-        <j.0:IAO_0000115 rdf:datatype="&xsd;string">A CRID symbol that is sufficient to look up a model from ModelDB</j.0:IAO_0000115>
+        <core:definition rdf:datatype="&xsd;string">A CRID symbol that is sufficient to look up a model from ModelDB</core:definition>
     </owl:Class>
     
 
@@ -2485,7 +2485,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000220">
         <rdfs:label rdf:datatype="&xsd;string">membrane capacitance</rdfs:label>
         <rdfs:subClassOf rdf:resource="&j.0;SBO_0000258"/>
-        <j.0:IAO_0000115 rdf:datatype="&xsd;string">Measure of the amount of electric charge stored (or separated) by the cellular membrane for a given electric potential. The unit of capacitance is the Farad.</j.0:IAO_0000115>
+        <core:definition rdf:datatype="&xsd;string">Measure of the amount of electric charge stored (or separated) by the cellular membrane for a given electric potential. The unit of capacitance is the Farad.</core:definition>
     </owl:Class>
     
 
@@ -2495,7 +2495,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000221">
         <rdfs:label rdf:datatype="&xsd;string">membrane resistance</rdfs:label>
         <rdfs:subClassOf rdf:resource="&j.0;SBO_0000254"/>
-        <j.0:IAO_0000115 rdf:datatype="&xsd;string">Measure of the degree to which the cellular membrane opposes the passage of an electric current. The SI unit of electrical resistance is the ohm.</j.0:IAO_0000115>
+        <core:definition rdf:datatype="&xsd;string">Measure of the degree to which the cellular membrane opposes the passage of an electric current. The SI unit of electrical resistance is the ohm.</core:definition>
     </owl:Class>
     
 

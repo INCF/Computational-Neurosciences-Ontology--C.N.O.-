@@ -1,0 +1,101 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.org/incf/ontology/Computational_Neurosciences/external_import/external.owl
+
+[Source ontology]
+SBO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/SBO_0000254 #electrical resistance (SBO)
+http://purl.obolibrary.org/obo/SBO_0000257 #conductance (SBO)
+http://purl.obolibrary.org/obo/SBO_0000492 #amplitude (SBO)
+http://purl.obolibrary.org/obo/SBO_0000538 #ionic permeability (SBO)
+includeAllChildren
+http://purl.obolibrary.org/obo/SBO_0000360 #quantity of an entity pool (SBO)
+includeAllChildren
+http://purl.obolibrary.org/obo/SBO_0000380 #biochemical coefficient (SBO)
+http://purl.obolibrary.org/obo/SBO_0000346 #temporal measure (SBO)
+includeAllChildren
+http://purl.obolibrary.org/obo/SBO_0000148 #temperature difference (SBO)
+http://purl.obolibrary.org/obo/SBO_0000009 #kinetic constant (SBO)
+includeAllChildren
+http://purl.obolibrary.org/obo/SBO_0000258 #capacitance (SBO)
+http://purl.obolibrary.org/obo/SBO_0000259 #voltage (SBO)
+http://purl.obolibrary.org/obo/SBO_0000465 #spatial measure (SBO)
+includeAllChildren
+http://purl.obolibrary.org/obo/SBO_0000539 #probabilistic parameter (SBO)
+http://purl.obolibrary.org/obo/SBO_0000567 #universal gas constant (SBO)
+http://purl.obolibrary.org/obo/SBO_0000568 #Faraday constant (SBO)
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/SBO_0000148 #temperature difference (SBO)
+subClassOf http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181
+http://purl.obolibrary.org/obo/SBO_0000346 #temporal measure (SBO)
+subClassOf http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181
+http://purl.obolibrary.org/obo/SBO_0000254 #electrical resistance (SBO)
+subClassOf http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181
+http://purl.obolibrary.org/obo/SBO_0000257 #conductance (SBO)
+subClassOf http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181
+http://purl.obolibrary.org/obo/SBO_0000492 #amplitude (SBO)
+subClassOf http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181
+http://purl.obolibrary.org/obo/SBO_0000538 #ionic permeability (SBO)
+subClassOf http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181
+http://purl.obolibrary.org/obo/SBO_0000360 #quantity of an entity pool (SBO)
+subClassOf http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181
+http://purl.obolibrary.org/obo/SBO_0000380 #biochemical coefficient (SBO)
+subClassOf http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181
+http://purl.obolibrary.org/obo/SBO_0000009 #kinetic constant (SBO)
+subClassOf http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181
+http://purl.obolibrary.org/obo/SBO_0000258 #capacitance (SBO)
+subClassOf http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181
+http://purl.obolibrary.org/obo/SBO_0000259 #voltage (SBO)
+subClassOf http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181
+http://purl.obolibrary.org/obo/SBO_0000465 #spatial measure (SBO)
+subClassOf http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181
+http://purl.obolibrary.org/obo/SBO_0000539 #probabilistic parameter (SBO)
+subClassOf http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181
+http://purl.obolibrary.org/obo/SBO_0000567 #universal gas constant (SBO)
+subClassOf http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000005
+http://purl.obolibrary.org/obo/SBO_0000568 #Faraday constant (SBO)
+subClassOf http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000005
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source ontology]
+OBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OBI_0001617 #PubMed Identifier (OBI)
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/OBI_0001617 #PubMed Identifier (OBI)
+subClassOf http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000175
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source ontology]
+IAO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/IAO_0000030 #information content entity (IAO)
+http://purl.obolibrary.org/obo/IAO_0000136 #is about (IAO)
+includeAllChildren
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/IAO_0000030 #information content entity (IAO)
+subClassOf  http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant
+http://purl.obolibrary.org/obo/IAO_0000136 #is about (IAO)
+subClassOf www.w3.org/2002/07/owl#topObjectProperty
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties

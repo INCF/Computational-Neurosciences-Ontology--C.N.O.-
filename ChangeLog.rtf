@@ -1,11 +1,10 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
 {\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;}
-{\colortbl;\red255\green255\blue255;\red69\green69\blue69;\red255\green255\blue255;\red0\green0\blue0;
-}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
 \paperw11900\paperh16840\margl1440\margr1440\vieww9000\viewh8400\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
 
-\f0\fs24 \cf0 Computational Neuroscience Ontology - Change Log\
+\f0\fs24 \cf2 Computational Neuroscience Ontology - Change Log\
 \
 Yann Le Franc, PhD\
 8/12/2012\
@@ -26,7 +25,7 @@ These model components can be either model parameters or aggregated component wh
 This leads to the following changes:\
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
-\cf0 Terms changes:\
+\cf2 Terms changes:\
 \
 	a- Updated label\
 \
@@ -119,10 +118,10 @@ cno_0000080: added definition based on Scholarpedia\
 cno_0000083: added definition based on Scholarpedia\
 cno_0000084: added definition based on Scholarpedia\
 cno_0000089: added definition based on the publication 
-\f1 \cf2 \cb3 PMID: 18244602\
-\cf4 cno_0000090: added definition based on Scholarpedia\
+\f1 \cb3 PMID: 18244602\
+cno_0000090: added definition based on Scholarpedia\
 cno_0000091: added definition\
-cno_0000092: \cf0 \cb1 added definition based on Scholarpedia\
+cno_0000092: \cb1 added definition based on Scholarpedia\
 cno_0000093: added definition based on Scholarpedia\
 
 \f0 cno_0000096: added definition based on Wikipedia. Should be under the model parameter class\
@@ -163,13 +162,17 @@ cno_0000200: added definition - Need improvement\
 cno_0000215: added definition based on Scholarpedia\
 cno_0000216: added definition - Need improvement\
 cno_0000219: added definition\
-\
+cno_0000005: added definition\
+	\
 	d- New term\
 cno_0000218 (aggregated model component)\
 cno_0000219 (model variable component)\
 cno_0000220 (membrane capacitance)\
 cno_0000221 (membrane resistance)\
 cno_0000222 (membrane time constant)\
+cno_0000063 (independent variable)\
+cno_0000064 (dependent variable)\
+cno_0000180 (model)\
 \
 	e- New classification\
 \
@@ -184,13 +187,13 @@ cno_0000057: added comment or note to flag an issue with the distinction between
 \
 Deprecation/Recycling\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
-\cf0 \
+\cf2 \
 cno_0000004: parameter values\
 cno_0000144: name --> transformed into datatype property (recycled)\
 cno_0000145: notation --> transformed into datatype property (recycled)\
 cno_0000146: numerical value --> transformed into datatype property (recycled)\
 cno_0000147: unit --> transformed into datatype property\
-\
+cno_0000005 --> physical constant\
 Second step: Import\
 \
 1- Import BFO1.1\
@@ -216,8 +219,22 @@ Third step: term mapping\
 \
 In order to import small parts of other biomedical ontologies such as SBO, IAO or OBI, we are using MIREOT and the tools provided by OBI that can be found here with a tutorial: {\field{\*\fldinst{HYPERLINK "http://obi-ontology.org/page/Tutorials"}}{\fldrslt http://obi-ontology.org/page/Tutorials}}\
 \
-After several unsuccessful attempt to generate an externalDerived.owl file using the tools provided in the OBI tutorial, \
+After several unsuccessful attempt to generate an externalDerived.owl file using the tools provided in the OBI tutorial, the solution adopted to import parts of different ontologies was to create an input file for the Ontofox webservice ({\field{\*\fldinst{HYPERLINK "http://ontofox.hegroup.org/"}}{\fldrslt http://ontofox.hegroup.org/}}) that generated an owl file containing the minimum information necessary to import the different terms from the different ontology sources. When necessary changes in the resulting owl file were done manually.\
 \
+For this first import, the ontology sources were SBO and OBI. Several terms from the class 
+\b "
+\f1 \cb3 quantitative systems description parameter"
+\b0  ({\field{\*\fldinst{HYPERLINK "http://purl.obolibrary.org/obo/SBO_0000002"}}{\fldrslt \ul http://purl.obolibrary.org/obo/SBO_0000002}}\ul )
+\f0 \cb1 \ulnone  and 
+\b "system description constant"
+\b0 (
+\f1 \cb3  {\field{\*\fldinst{HYPERLINK "http://purl.obolibrary.org/obo/SBO_0000565"}}{\fldrslt \ul http://purl.obolibrary.org/obo/SBO_0000565}}
+\f0 \cb1 ) were added respectively under the CNO classes: "physical representation" (cno_0000147) and "physical constant" (cno_0000005).\
+\
+In order to allow for annotation of papers and model entries in ModelDB to test the structure of CNO, the class "Pubmed Id" has been imported from OBI as well as the relation "is about" and its subrelations. A class labeled "ModelDB accession number" has been created as a placeholder for referencing ModelDB entries.\
+\
+Both "PubMed Id" and "ModelDB accession number" are linked to the generic class "model" and the class "defined model" using the "denotes" relation. \
+In addition, "model" and "defined model" are linked with the class "model component" using the RO relation "has part". \
 \
 \
 \

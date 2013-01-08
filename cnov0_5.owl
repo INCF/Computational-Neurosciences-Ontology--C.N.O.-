@@ -205,13 +205,13 @@ The source of the definition can be defined with class from OBO-annotation</rdfs
     <!-- http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000003 -->
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000003">
-        <rdfs:label rdf:datatype="&xsd;string">model parameter component</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">parameter</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000147"/>
         <owl:disjointWith rdf:resource="&core;Collection"/>
         <owl:disjointWith rdf:resource="&core;Concept"/>
         <owl:disjointWith rdf:resource="&core;ConceptScheme"/>
         <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
-        <core:definition rdf:datatype="&xsd;string">a model component that determine the characteristics or behaviour of the model</core:definition>
+        <core:definition rdf:datatype="&xsd;string">elementary model component role that defines an elementary model component as constant value determining the characteristics or behaviour of the model</core:definition>
     </owl:Class>
     
 
@@ -225,7 +225,7 @@ The source of the definition can be defined with class from OBO-annotation</rdfs
         <owl:disjointWith rdf:resource="&core;Concept"/>
         <owl:disjointWith rdf:resource="&core;ConceptScheme"/>
         <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
-        <core:definition rdf:datatype="&xsd;string">... that represents the value of the membrane potential at which the model is maintained after the emission of a spike.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">value of the membrane potential at which the model is maintained after the emission of a spike.</core:definition>
     </owl:Class>
     
 
@@ -247,9 +247,9 @@ The source of the definition can be defined with class from OBO-annotation</rdfs
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000007">
         <rdfs:label rdf:datatype="&xsd;string">phenomenological plasticity model</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000183"/>
-        <core:definition rdf:datatype="&xsd;string">...that are based on an input-output relationship between neuronal activity and synaptic plasticity. This type of model does not explicitly account for the biochemistry and physiology leading to synaptic plasticity.</core:definition>
         <j.0:IAO_0000119 rdf:datatype="&xsd;string">http://www.scholarpedia.org/article/Models_of_synaptic_plasticity</j.0:IAO_0000119>
         <obo_annot:definingCitationURI rdf:datatype="&xsd;string">http://www.scholarpedia.org/article/Models_of_synaptic_plasticity</obo_annot:definingCitationURI>
+        <core:definition rdf:datatype="&xsd;string">long term plasticity model that is based on an input-output relationship between neuronal activity and synaptic plasticity. This type of model does not explicitly account for the biochemistry and physiology leading to synaptic plasticity.</core:definition>
     </owl:Class>
     
 
@@ -395,10 +395,11 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <!-- http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000021 -->
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000021">
-        <rdfs:label rdf:datatype="&xsd;string">conductance-based model</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">pulse-based model</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000018"/>
-        <core:definition rdf:datatype="&xsd;string"></core:definition>
-        <rdfs:comment rdf:datatype="&xsd;string">Give a better definition. The problem is how to represent integrate and fire models with multiple conductances such as in Hill, 2005?</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">This classe refers to detailed integrate-and-fire models as described in Destexhe A. (1997, PMID: 9097470) and Hill S. and Tononi G. (2005, PMID: 15537811) </rdfs:comment>
+        <core:definition rdf:datatype="&xsd;string">a threshold based spiking neuron model that is an hybrid between Hodgkin and Huxley and integrate-and-fire models. The model describes the impact of  fast sodium and delayed rectifier potassium conductances on the subthreshold membrane voltage dynamic and considers action potentials as pulses during which the sodium and potassium conductances are set to particular values representing their participation to the generation and repolarization of the action potential. </core:definition>
+        <j.0:IAO_0000118 rdf:datatype="&xsd;string">conductance-based model</j.0:IAO_0000118>
     </owl:Class>
     
 
@@ -427,7 +428,7 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <!-- http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000024 -->
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000024">
-        <rdfs:label rdf:datatype="&xsd;string">three variable models</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">three variable model</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000018"/>
         <core:definition rdf:datatype="&xsd;string">a threshold-based model that uses three variables to describe the nerve cells behavior</core:definition>
     </owl:Class>
@@ -472,6 +473,7 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000028">
         <rdfs:label rdf:datatype="&xsd;string">rate model</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000010"/>
+        <j.0:IAO_0000115 rdf:datatype="&xsd;string">network model composed of rate-based neuron models</j.0:IAO_0000115>
     </owl:Class>
     
 
@@ -576,7 +578,7 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
         <rdfs:label rdf:datatype="&xsd;string">resting membrane potential</rdfs:label>
         <rdfs:subClassOf rdf:resource="&j.0;SBO_0000259"/>
         <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
-        <core:definition rdf:datatype="&xsd;string">model parameter component that represent the value of the neuronal membrane potential at rest</core:definition>
+        <core:definition rdf:datatype="&xsd;string">value of the neuronal membrane potential at rest</core:definition>
     </owl:Class>
     
 
@@ -600,7 +602,7 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
         <owl:disjointWith rdf:resource="&core;Collection"/>
         <owl:disjointWith rdf:resource="&core;Concept"/>
         <owl:disjointWith rdf:resource="&core;ConceptScheme"/>
-        <core:definition rdf:datatype="&xsd;string">... that represents a qualitative feature of the model that can be either independent of the model specification or a property resulting of the particular model specification</core:definition>
+        <core:definition rdf:datatype="&xsd;string">quality that represents a qualitative feature of the model that can be either independent of the model specification or a property resulting of the particular model specification</core:definition>
     </owl:Class>
     
 
@@ -640,7 +642,7 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000044">
         <rdfs:label rdf:datatype="&xsd;string">stimulation current</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000126"/>
-        <core:definition rdf:datatype="&xsd;string">a cellular model component that represents input currents provided to the model via an electrode (intracellular or extracellular).</core:definition>
+        <core:definition rdf:datatype="&xsd;string">current model that represents input currents provided to the model via an electrode (intracellular or extracellular).</core:definition>
     </owl:Class>
     
 
@@ -669,7 +671,7 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000047">
         <rdfs:label rdf:datatype="&xsd;string">ionic current model</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000126"/>
-        <core:definition rdf:datatype="&xsd;string">a current type that describes the flow of ions through cellular membrane.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">a current model that describes the flow of ions through cellular membrane.</core:definition>
     </owl:Class>
     
 
@@ -679,7 +681,7 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000048">
         <rdfs:label rdf:datatype="&xsd;string">synaptic current</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000126"/>
-        <core:definition rdf:datatype="&xsd;string">a current type that represents the flow of ions triggered by the activation of a chemical or electrical synapse model.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">current model that represents the flow of ions triggered by the activation of a chemical or electrical synapse model.</core:definition>
     </owl:Class>
     
 
@@ -687,9 +689,9 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <!-- http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000049 -->
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000049">
-        <rdfs:label rdf:datatype="&xsd;string">abstract current</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">abstract current model</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000126"/>
-        <core:definition rdf:datatype="&xsd;string">a current type that is an abtraction of complex current interactions and which is used to reproduce a particular cellular behavior such as rebound or adaptation.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">a current model that is an abtraction of complex current interactions and which is used to reproduce a particular cellular behavior such as rebound or adaptation.</core:definition>
     </owl:Class>
     
 
@@ -750,7 +752,7 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000055">
         <rdfs:label rdf:datatype="&xsd;string">reconstructed</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000165"/>
-        <rdfs:comment rdf:datatype="&xsd;string">Could a quality of the model rather than a component. Reference to the definition of quality by BFO</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
         <core:definition rdf:datatype="&xsd;string">morphological quality that represents model morphologies build upon the reconstruction of a real nerve cell morphology using imaging techniques such as camera lucida or two-photon imaging.</core:definition>
     </owl:Class>
     
@@ -791,9 +793,8 @@ It should contain models like Fitzhugh-Nagumo, Morris-Lecar models.</rdfs:commen
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000059">
         <rdfs:label rdf:datatype="&xsd;string">non linear spike generation current</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000126"/>
-        <core:definition rdf:datatype="&xsd;string">a cellular model component that represents an additional non-linear current ψ which leads to a divergence of the potential toward infinity in a finite
-time during the emission of an action potential.</core:definition>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000049"/>
+        <core:definition rdf:datatype="&xsd;string">abstract current model that represents an additional non-linear current ψ which leads to a divergence of the potential toward infinity in a finite time during the emission of an action potential.</core:definition>
     </owl:Class>
     
 
@@ -812,7 +813,7 @@ time during the emission of an action potential.</core:definition>
         <owl:disjointWith rdf:resource="&core;Collection"/>
         <owl:disjointWith rdf:resource="&core;Concept"/>
         <owl:disjointWith rdf:resource="&core;ConceptScheme"/>
-        <core:definition rdf:datatype="&xsd;string">a generically_dependent_continuant that represent the set of  models defined in scientific publication and commonly used to build other models.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">a generically_dependent_continuant that represent the set of  models commonly used to build other models.</core:definition>
     </owl:Class>
     
 
@@ -845,6 +846,8 @@ time during the emission of an action potential.</core:definition>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000063">
         <rdfs:label rdf:datatype="&xsd;string">independent variable</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000219"/>
+        <obo_annot:definingCitationURI rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Variable_(mathematics)</obo_annot:definingCitationURI>
+        <j.0:IAO_0000115 rdf:datatype="&xsd;string">variable regarded as inputs to a system and may take on different values freely</j.0:IAO_0000115>
     </owl:Class>
     
 
@@ -854,6 +857,8 @@ time during the emission of an action potential.</core:definition>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000064">
         <rdfs:label rdf:datatype="&xsd;string">dependent variable</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000219"/>
+        <obo_annot:definingCitationURI rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Variable_(mathematics)</obo_annot:definingCitationURI>
+        <j.0:IAO_0000115 rdf:datatype="&xsd;string">variable regarded as values that change as a consequence of changes in other values in the system.</j.0:IAO_0000115>
     </owl:Class>
     
 
@@ -944,7 +949,7 @@ time during the emission of an action potential.</core:definition>
         <rdfs:label rdf:datatype="&xsd;string">Izhikevich model</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000060"/>
         <obo_annot:definingCitationID rdf:datatype="&xsd;string">PMID: 18244602</obo_annot:definingCitationID>
-        <core:definition rdf:datatype="&xsd;string">a defined model that is a minimal two-variable integrate-and-fire model that reproduces different features depending on the value of the 4 parameters. The second variable represents the adaptation. This model has been proposed in Izhikevich, 2003.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">a defined model that is a minimal two-variable integrate-and-fire model that reproduces different features depending on the value of 4 parameters. The second variable represents the adaptation. This model has been proposed in Izhikevich, 2003.</core:definition>
     </owl:Class>
     
 
@@ -989,7 +994,7 @@ time during the emission of an action potential.</core:definition>
         <rdfs:label rdf:datatype="&xsd;string">Shinomoto model</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000060"/>
         <obo_annot:definingCitationID rdf:datatype="&xsd;string">PMID: 20478693</obo_annot:definingCitationID>
-        <core:definition rdf:datatype="&xsd;string">a defined that is a multi-timescale adaptive threshold model of neuronal spiking incorporated into the stochastic framework of the linear-nonlinear Poisson model in the form of a generalized linear model.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">a defined model that is a multi-timescale adaptive threshold model of neuronal spiking incorporated into the stochastic framework of the linear-nonlinear Poisson model in the form of a generalized linear model.</core:definition>
     </owl:Class>
     
 
@@ -1091,7 +1096,7 @@ time during the emission of an action potential.</core:definition>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000085">
         <rdfs:label rdf:datatype="&xsd;string">adaptation current</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000049"/>
-        <core:definition rdf:datatype="&xsd;string">an abstract current that represents the mechanism of spiking frequency adaptation.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">an abstract current model that represents the mechanism of spiking frequency adaptation.</core:definition>
     </owl:Class>
     
 
@@ -1101,7 +1106,7 @@ time during the emission of an action potential.</core:definition>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000086">
         <rdfs:label rdf:datatype="&xsd;string">rebound current</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000049"/>
-        <core:definition rdf:datatype="&xsd;string">an abstract current that represents the mechanisms of rebound.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">abstract current model that represents the mechanisms of rebound.</core:definition>
     </owl:Class>
     
 
@@ -1112,7 +1117,7 @@ time during the emission of an action potential.</core:definition>
         <rdfs:label rdf:datatype="&xsd;string">spiking current</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000049"/>
         <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
-        <core:definition rdf:datatype="&xsd;string">an abstract current that represents the mechanisms involved in the action potential and which is used to build HindMarch and Rose models</core:definition>
+        <core:definition rdf:datatype="&xsd;string">abstract current model that represents the mechanisms involved in the action potential and which is used to build HindMarch and Rose models</core:definition>
         <obo_annot:definingCitationURI rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Hindmarsh%E2%80%93Rose_model</obo_annot:definingCitationURI>
         <obo_annot:synonym rdf:datatype="&xsd;string">spiking variable, y</obo_annot:synonym>
     </owl:Class>
@@ -1125,7 +1130,7 @@ time during the emission of an action potential.</core:definition>
         <rdfs:label rdf:datatype="&xsd;string">bursting current</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000049"/>
         <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
-        <core:definition rdf:datatype="&xsd;string">an abstract current that represents the mechanisms of bursting and used to build HindMarch and Rose models.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">abstract current model that represents the mechanisms of bursting and used to build HindMarch and Rose models.</core:definition>
         <obo_annot:synonym rdf:datatype="&xsd;string">bursting variable, z</obo_annot:synonym>
         <obo_annot:definingCitationURI rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Hindmarsh%E2%80%93Rose_model</obo_annot:definingCitationURI>
     </owl:Class>
@@ -1136,10 +1141,10 @@ time during the emission of an action potential.</core:definition>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000089">
         <rdfs:label rdf:datatype="&xsd;string">membrane recovery variable</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000036"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000049"/>
         <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
-        <core:definition rdf:datatype="&xsd;string">...which accounts for the activation of potassium ionic currents and inactivation of sodium ionic currents and provides negative feedback to the membrane voltage</core:definition>
         <obo_annot:definingCitationID rdf:datatype="&xsd;string">PMID: 18244602</obo_annot:definingCitationID>
+        <core:definition rdf:datatype="&xsd;string">abstract current model which accounts for the activation of potassium ionic currents and inactivation of sodium ionic currents and provides negative feedback to the membrane voltage</core:definition>
     </owl:Class>
     
 
@@ -1162,7 +1167,7 @@ time during the emission of an action potential.</core:definition>
         <rdfs:label rdf:datatype="&xsd;string">Wang-Buzsaki model</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000060"/>
         <obo_annot:definingCitationID rdf:datatype="&xsd;string">PMID: 8815919</obo_annot:definingCitationID>
-        <core:definition rdf:datatype="&xsd;string">a defined model that is a network model composed of single compartment model, derived from the original Hodgkin-Huxley model. This network model represents a network of hippocampal interneurons.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">a defined model that is a network model composed of single compartment models, derived from the original Hodgkin-Huxley model. This network model represents a network of hippocampal interneurons.</core:definition>
     </owl:Class>
     
 
@@ -1174,7 +1179,7 @@ time during the emission of an action potential.</core:definition>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000060"/>
         <obo_annot:synonym rdf:datatype="&xsd;string">Bonhoeffer-van der Pol model</obo_annot:synonym>
         <obo_annot:definingCitationID rdf:datatype="&xsd;string">PMID: 19431309</obo_annot:definingCitationID>
-        <core:definition rdf:datatype="&xsd;string">a defined that is a two-dimensional simplification of the Hodgkin-Huxley model of spike generation in squid giant axons. The model consist of a voltage-like variable having cubic nonlinearity that allows regenerative self-excitation via positive feedback and a recovery variable having a linear dynamics that provides a slower negative feedback.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">a defined model that is a two-dimensional simplification of the Hodgkin-Huxley model of spike generation in squid giant axons. The model consist of a voltage-like variable having cubic nonlinearity that allows regenerative self-excitation via positive feedback and a recovery variable having a linear dynamics that provides a slower negative feedback.</core:definition>
         <obo_annot:definingCitationURI rdf:datatype="&xsd;string">http://www.scholarpedia.org/article/FitzHugh-Nagumo_model</obo_annot:definingCitationURI>
     </owl:Class>
     
@@ -1186,7 +1191,7 @@ time during the emission of an action potential.</core:definition>
         <rdfs:label rdf:datatype="&xsd;string">Morris-Lecar model</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000060"/>
         <obo_annot:definingCitationID rdf:datatype="&xsd;string">PMID: 7260316</obo_annot:definingCitationID>
-        <core:definition rdf:datatype="&xsd;string">a defined that is a two-dimensional reduced excitation model applicable to systems having two non-inactivating voltage-sensitive conductances. The original form of the model employed an instantaneously responding voltage-sensitive calcium conductance for excitation and a delayed voltage-dependent potassium conductance for recovery.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">a defined model that is a two-dimensional reduced excitation model applicable to systems having two non-inactivating voltage-sensitive conductances. The original form of the model employed an instantaneously responding voltage-sensitive calcium conductance for excitation and a delayed voltage-dependent potassium conductance for recovery.</core:definition>
         <obo_annot:definingCitationURI rdf:datatype="&xsd;string">http://www.scholarpedia.org/article/Morris-Lecar_model</obo_annot:definingCitationURI>
     </owl:Class>
     
@@ -1249,7 +1254,7 @@ time during the emission of an action potential.</core:definition>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000099">
         <rdfs:label rdf:datatype="&xsd;string">synaptic delay</rdfs:label>
         <rdfs:subClassOf rdf:resource="&j.0;SBO_0000225"/>
-        <core:definition rdf:datatype="&xsd;string">a synapse model component that represent the delay between the activation of the synapse and its impact on the post-synaptic model.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">delay between the activation of the synapse and its impact on the post-synaptic model.</core:definition>
     </owl:Class>
     
 
@@ -1259,7 +1264,7 @@ time during the emission of an action potential.</core:definition>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000100">
         <rdfs:label rdf:datatype="&xsd;string">voltage dependent receptor activation</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000037"/>
-        <core:definition rdf:datatype="&xsd;string">a synapse model component that describes the voltage dependent activation of  receptor such NMDA receptor that will participate in the total synaptic current.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">a synapse model component that describes the voltage dependent activation of  receptor such as NMDA receptor that will participate in the total synaptic current.</core:definition>
     </owl:Class>
     
 
@@ -1401,7 +1406,7 @@ time during the emission of an action potential.</core:definition>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000114">
         <rdfs:label rdf:datatype="&xsd;string">instantaneous rise and monexponential decay</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000098"/>
-        <core:definition rdf:datatype="&xsd;string">a synaptic conductance dynamic which assumes an instanteanous rise of the conductance followed by an exponential decay witha time constant.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">a synaptic conductance dynamic which assumes an instanteanous rise of the conductance followed by an exponential decay with a time constant.</core:definition>
     </owl:Class>
     
 
@@ -1452,9 +1457,9 @@ time during the emission of an action potential.</core:definition>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000119">
         <rdfs:label rdf:datatype="&xsd;string">connectivity pattern</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000177"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000202"/>
         <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
-        <core:definition rdf:datatype="&xsd;string">... that represents a connectivity pattern obtained with specific connectivity rule</core:definition>
+        <core:definition rdf:datatype="&xsd;string">a model component quality that represents a connectivity pattern obtained with specific connectivity rule</core:definition>
     </owl:Class>
     
 
@@ -1506,8 +1511,8 @@ time during the emission of an action potential.</core:definition>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000124">
         <rdfs:label rdf:datatype="&xsd;string">functional grouping</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000148"/>
-        <core:definition rdf:datatype="&xsd;string">a cellular grouping that is defined by common functional criterons</core:definition>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000143"/>
+        <core:definition rdf:datatype="&xsd;string">cellular grouping quality that represents cellular grouping defined by common functional criterons.</core:definition>
     </owl:Class>
     
 
@@ -1516,8 +1521,8 @@ time during the emission of an action potential.</core:definition>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000125">
         <rdfs:label rdf:datatype="&xsd;string">anatomical grouping</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000148"/>
-        <core:definition rdf:datatype="&xsd;string">a cellular grouping that is based on anatomical information</core:definition>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000143"/>
+        <core:definition rdf:datatype="&xsd;string">cellular grouping quality that represents cellular grouping based on anatomical information</core:definition>
     </owl:Class>
     
 
@@ -1525,7 +1530,7 @@ time during the emission of an action potential.</core:definition>
     <!-- http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000126 -->
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000126">
-        <rdfs:label rdf:datatype="&xsd;string">current model type</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">current model</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000036"/>
         <core:definition rdf:datatype="&xsd;string">a cellular model component that represents the different types of modeled currents that can influence the trajectory of the membrane voltage</core:definition>
     </owl:Class>
@@ -1536,8 +1541,8 @@ time during the emission of an action potential.</core:definition>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000127">
         <rdfs:label rdf:datatype="&xsd;string">current localization</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000036"/>
-        <core:definition rdf:datatype="&xsd;string">a cellular model component that represents the location of the current source on a neuronal model (somatic, primary dendrite, ...)</core:definition>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000174"/>
+        <core:definition rdf:datatype="&xsd;string">current model quality that represents the location of the current source on a neuronal model (somatic, primary dendrite, ...)</core:definition>
     </owl:Class>
     
 
@@ -1546,8 +1551,8 @@ time during the emission of an action potential.</core:definition>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000128">
         <rdfs:label rdf:datatype="&xsd;string">current distribution</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000036"/>
-        <core:definition rdf:datatype="&xsd;string">a cellular model component that represents the spatial distribution of current sources (ionic channels, synaptic channels, stimulation electrode) on a compartment</core:definition>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000174"/>
+        <core:definition rdf:datatype="&xsd;string">current model quality that represents the spatial distribution of current sources (ionic channels, synaptic channels, stimulation electrode) on a compartment</core:definition>
     </owl:Class>
     
 
@@ -1611,8 +1616,8 @@ time during the emission of an action potential.</core:definition>
     <!-- http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000135 -->
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000135">
-        <rdfs:label rdf:datatype="&xsd;string">area</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000209"/>
+        <rdfs:label rdf:datatype="&xsd;string">synaptic plasticity element</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000058"/>
     </owl:Class>
     
 
@@ -1638,8 +1643,9 @@ time during the emission of an action potential.</core:definition>
     <!-- http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000138 -->
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000138">
-        <rdfs:label rdf:datatype="&xsd;string">probability</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000209"/>
+        <rdfs:label rdf:datatype="&xsd;string">random</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000143"/>
+        <j.0:IAO_0000115 rdf:datatype="&xsd;string">cellular grouping quality that represents probabilistic grouping of cellular models within network models.</j.0:IAO_0000115>
     </owl:Class>
     
 
@@ -1683,8 +1689,9 @@ time during the emission of an action potential.</core:definition>
     <!-- http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000143 -->
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000143">
-        <rdfs:label rdf:datatype="&xsd;string">number of elements</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000209"/>
+        <rdfs:label rdf:datatype="&xsd;string">cellular grouping quality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000202"/>
+        <j.0:IAO_0000115 rdf:datatype="&xsd;string">a model component quality that represent the properties of cellular grouping in network models</j.0:IAO_0000115>
     </owl:Class>
     
 
@@ -1703,8 +1710,8 @@ time during the emission of an action potential.</core:definition>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000145">
         <rdfs:label rdf:datatype="&xsd;string">refractory period</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000140"/>
-        <core:definition rdf:datatype="&xsd;string">... that represent the duration during which the model cannot emit a subsequent spike following an initial spike.</core:definition>
+        <rdfs:subClassOf rdf:resource="&j.0;SBO_0000347"/>
+        <core:definition rdf:datatype="&xsd;string">a duration that represent the duration during which the model cannot emit a subsequent spike following an initial spike.</core:definition>
     </owl:Class>
     
 
@@ -1714,7 +1721,7 @@ time during the emission of an action potential.</core:definition>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000146">
         <rdfs:label rdf:datatype="&xsd;string">spiking threshold</rdfs:label>
         <rdfs:subClassOf rdf:resource="&j.0;SBO_0000259"/>
-        <core:definition rdf:datatype="&xsd;string">... that represents the value above which the model emits a spike</core:definition>
+        <core:definition rdf:datatype="&xsd;string">voltage above which the model emits a spike</core:definition>
     </owl:Class>
     
 
@@ -1824,7 +1831,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000157">
         <rdfs:label rdf:datatype="&xsd;string">user-defined</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000203"/>
-        <core:definition rdf:datatype="&xsd;string">a cellular distribution where the cellular models are arranged based on user-defined criterions that are not based on anatomical information</core:definition>
+        <core:definition rdf:datatype="&xsd;string">cellular distribution quality that represents the distribution of cellular models in network models arranged based on user-defined criterions that are not based on anatomical information.</core:definition>
         <rdfs:comment rdf:datatype="&xsd;string">is a quality</rdfs:comment>
     </owl:Class>
     
@@ -1845,7 +1852,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000159">
         <rdfs:label rdf:datatype="&xsd;string">uniform</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000203"/>
-        <core:definition rdf:datatype="&xsd;string">a cellular distribution where cellular models are uniformly distributed.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">cellular distribution quality that represents a cellular distribution in network models where cellular models are uniformly distributed in the abstract space.</core:definition>
         <rdfs:comment rdf:datatype="&xsd;string">is a quality</rdfs:comment>
     </owl:Class>
     
@@ -1856,7 +1863,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000160">
         <rdfs:label rdf:datatype="&xsd;string">pre-synaptic variable</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
-        <core:definition rdf:datatype="&xsd;string">a pre-synaptic element that specifies the variable of the neuronal model used into the equations of the synapse model.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">elementary model component that specifies the variable of the neuronal model used into the equations of the synapse model.</core:definition>
     </owl:Class>
     
 
@@ -1878,7 +1885,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
         <rdfs:label rdf:datatype="&xsd;string">Hodgkin and Huxley model</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000060"/>
         <obo_annot:definingCitationID rdf:datatype="&xsd;string">PMID: 12991237</obo_annot:definingCitationID>
-        <core:definition rdf:datatype="&xsd;string">defined model that describes how action potentials in neurons are initiated and propagated.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">defined model that describes how action potentials in neurons are initiated and propagated in squid giant axon.</core:definition>
         <obo_annot:definingCitationURI rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Hodgkin%E2%80%93Huxley_model</obo_annot:definingCitationURI>
     </owl:Class>
     
@@ -1899,7 +1906,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000164">
         <rdfs:label rdf:datatype="&xsd;string">anatomically defined</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000203"/>
-        <core:definition rdf:datatype="&xsd;string">a cellular distribution that is defined based on criterions derived from anatomical information</core:definition>
+        <core:definition rdf:datatype="&xsd;string">cellular distribution quality that represents the cellular distribution in the network model based on criterions derived from anatomical information</core:definition>
         <rdfs:comment rdf:datatype="&xsd;string">is a quality</rdfs:comment>
     </owl:Class>
     
@@ -1911,7 +1918,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
         <rdfs:label rdf:datatype="&xsd;string">morphological quality</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000202"/>
         <rdfs:comment rdf:datatype="&xsd;string">Similar to sao1057800815</rdfs:comment>
-        <core:definition rdf:datatype="&xsd;string">a model quality that described the kind of morphology used in the neuron models.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">a model component quality that described the kind of morphology used in the neuron models.</core:definition>
     </owl:Class>
     
 
@@ -1932,7 +1939,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000167">
         <rdfs:label rdf:datatype="&xsd;string">post-synaptic variable</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
-        <core:definition rdf:datatype="&xsd;string">a post-synaptic element that specifies the variable of the neuronal model used into the equations of the synapse model.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">elementary model component that specifies the variable of the neuronal model used into the equations of the synapse model.</core:definition>
     </owl:Class>
     
 
@@ -1941,7 +1948,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000168">
         <rdfs:label rdf:datatype="&xsd;string">uniform</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000203"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000128"/>
         <core:definition rdf:datatype="&xsd;string">a current distribution where current models are uniformly distributed.</core:definition>
     </owl:Class>
     
@@ -1951,9 +1958,9 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000169">
         <rdfs:label rdf:datatype="&xsd;string">learning rule</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000166"/>
-        <core:definition rdf:datatype="&xsd;string">a functional quality that is a method which improves the neural network&#39;s performance. It is done by updating the weights and bias level of a network after a network is stimulated in an environment.</core:definition>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000058"/>
         <obo_annot:definingCitationURI rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Learning_rule</obo_annot:definingCitationURI>
+        <core:definition rdf:datatype="&xsd;string">network model component that is a method which improves the neural network&#39;s performance. It is done by updating the weights and bias level of a network after a network is stimulated in an environment.</core:definition>
     </owl:Class>
     
 
@@ -1962,7 +1969,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000170">
         <rdfs:label rdf:datatype="&xsd;string">random</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000203"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000128"/>
         <core:definition rdf:datatype="&xsd;string">a current distribution where current models are distributed according to a particular probability distribution.</core:definition>
     </owl:Class>
     
@@ -1972,7 +1979,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000171">
         <rdfs:label rdf:datatype="&xsd;string">non-linear</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000203"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000128"/>
         <core:definition rdf:datatype="&xsd;string">a current distribution where current models are distributed according to a non-linear function of space.</core:definition>
     </owl:Class>
     
@@ -1982,8 +1989,8 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000172">
         <rdfs:label rdf:datatype="&xsd;string">linear</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000203"/>
-        <core:definition rdf:datatype="&xsd;string"></core:definition>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000128"/>
+        <core:definition rdf:datatype="&xsd;string">a current distribution where current models are distributed according to a linear function of space.</core:definition>
     </owl:Class>
     
 
@@ -2000,13 +2007,13 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
     <!-- http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000174 -->
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000174">
-        <rdfs:label rdf:datatype="&xsd;string">biological correlate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000209"/>
+        <rdfs:label rdf:datatype="&xsd;string">current model quality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000202"/>
         <owl:disjointWith rdf:resource="&core;Collection"/>
         <owl:disjointWith rdf:resource="&core;Concept"/>
         <owl:disjointWith rdf:resource="&core;ConceptScheme"/>
-        <rdfs:comment rdf:datatype="&xsd;string">This class represent the main entry point for NeuroLex/ NIF STD biological, structural and anatomical concepts. Model should be linked to this class with a dedicated property hasBiologicalCorrelate/isBiologicalCorrelateOf.</rdfs:comment>
-        <core:definition rdf:datatype="&xsd;string">represents the differents biological concepts and entities described by models.</core:definition>
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
+        <core:definition rdf:datatype="&xsd;string">model component quality that represent specific properties attached to current models</core:definition>
     </owl:Class>
     
 
@@ -2248,7 +2255,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000197">
         <rdfs:label rdf:datatype="&xsd;string">synaptic plasticity model component</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000210"/>
-        <rdfs:comment rdf:datatype="&xsd;string">This part of the classification is based upon the proposed categories in Morrisson, 2008</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
         <core:definition rdf:datatype="&xsd;string">a component of plasticity models that describes the rules governing the changes in synaptic efficacy.</core:definition>
     </owl:Class>
     
@@ -2300,6 +2307,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000202">
         <rdfs:label rdf:datatype="&xsd;string">model component quality</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;Quality"/>
+        <j.0:IAO_0000115 rdf:datatype="&xsd;string">quality exhibited by model components</j.0:IAO_0000115>
     </owl:Class>
     
 
@@ -2307,8 +2315,9 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
     <!-- http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000203 -->
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000203">
-        <rdfs:label rdf:datatype="&xsd;string">distribution quality</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">cellular distribution quality</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000202"/>
+        <j.0:IAO_0000115 rdf:datatype="&xsd;string">model component quality that describes the distribution of cellular model in abstract space</j.0:IAO_0000115>
     </owl:Class>
     
 
@@ -2333,8 +2342,8 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000206">
         <rdfs:label rdf:datatype="&xsd;string">mixed grouping</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000148"/>
-        <core:definition rdf:datatype="&xsd;string">cellular grouping that is based on two criterions: anatomical and functional</core:definition>
+        <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000143"/>
+        <core:definition rdf:datatype="&xsd;string">cellular grouping quality that represents the grouping of cellular model based on two criterions: anatomical and functional</core:definition>
     </owl:Class>
     
 
@@ -2434,7 +2443,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000216">
         <rdfs:label rdf:datatype="&xsd;string">learning rate</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000181"/>
-        <core:definition rdf:datatype="&xsd;string">model parameter that set the amount by which synaptic weight are updated</core:definition>
+        <core:definition rdf:datatype="&xsd;string">elementary model component that set the amount by which synaptic weight are updated</core:definition>
     </owl:Class>
     
 
@@ -2444,7 +2453,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000217">
         <rdfs:label rdf:datatype="&xsd;string">leakage current</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000049"/>
-        <core:definition rdf:datatype="&xsd;string">an abstract current that approximates the passive properties of biological neurons.</core:definition>
+        <core:definition rdf:datatype="&xsd;string">abstract current model that approximates the passive properties of biological neurons.</core:definition>
         <obo_annot:definingCitationURI rdf:datatype="&xsd;string">http://www.scholarpedia.org/article/Conductance-based_models</obo_annot:definingCitationURI>
     </owl:Class>
     
@@ -2463,9 +2472,10 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
     <!-- http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000219 -->
 
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000219">
-        <rdfs:label rdf:datatype="&xsd;string">model variable component</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">variable</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000147"/>
-        <core:definition rdf:datatype="&xsd;string">a model component that has a value varying depending on other parameters</core:definition>
+        <core:definition rdf:datatype="&xsd;string">elementary model component role that defines an elementary model component as a value that may change within the scope of a given problem or set of operations.</core:definition>
+        <obo_annot:definingCitationURI rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Variable_(mathematics)</obo_annot:definingCitationURI>
     </owl:Class>
     
 
@@ -2475,6 +2485,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000220">
         <rdfs:label rdf:datatype="&xsd;string">membrane capacitance</rdfs:label>
         <rdfs:subClassOf rdf:resource="&j.0;SBO_0000258"/>
+        <j.0:IAO_0000115 rdf:datatype="&xsd;string">Measure of the amount of electric charge stored (or separated) by the cellular membrane for a given electric potential. The unit of capacitance is the Farad.</j.0:IAO_0000115>
     </owl:Class>
     
 
@@ -2484,6 +2495,7 @@ The model can be enriched with particular spatial embedding.</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/incf/ontology/Computational_Neurosciences/cno_alpha.owl#cno_0000221">
         <rdfs:label rdf:datatype="&xsd;string">membrane resistance</rdfs:label>
         <rdfs:subClassOf rdf:resource="&j.0;SBO_0000254"/>
+        <j.0:IAO_0000115 rdf:datatype="&xsd;string">Measure of the degree to which the cellular membrane opposes the passage of an electric current. The SI unit of electrical resistance is the ohm.</j.0:IAO_0000115>
     </owl:Class>
     
 

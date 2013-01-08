@@ -52,8 +52,7 @@
 The source of the definition can be defined with class from OBO-annotation</rdfs:comment>
         <rdfs:comment rdf:datatype="&xsd;string">This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</rdfs:comment>
         <dc:creator rdf:datatype="&xsd;string">Yann Le Franc</dc:creator>
-        <owl:versionInfo rdf:datatype="&xsd;string">version 0.5
-</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="&xsd;string">version 0.5</owl:versionInfo>
         <owl:imports rdf:resource="http://ontology.neuinfo.org/NIF/Backend/OBO_annotation_properties.owl"/>
         <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
         <owl:imports rdf:resource="http://purl.org/incf/ontology/Computational_Neurosciences/external_import/external.owl"/>
